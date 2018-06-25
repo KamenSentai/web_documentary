@@ -1,0 +1,15 @@
+{% extends 'index.twig' %}
+
+{% block html %}
+
+    {% embed './partials/head.twig' %}
+        {% block title %}Web documentary{% endblock %}
+    {% endembed %}
+
+    {% embed './partials/body.twig' %}
+        {% block body %}
+            <h1>Slim Framework template by Alain Cao Van Truong for a web documentary school project</h1>
+        {% endblock %}
+    {% endembed %}
+
+{% endblock %}
