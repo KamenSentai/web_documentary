@@ -8,17 +8,20 @@ const renderer = new THREE.WebGLRenderer()
 renderer.setClearColor(0xffffff, 1)
 renderer.setSize(window.innerWidth, window.innerHeight)
 
-document.body.appendChild(renderer.domElement)
+document.body.insertBefore(renderer.domElement, document.body.firstChild)
 
 const camera = new THREE.PerspectiveCamera(50, ratioWindow, 1, 100000)
-camera.position.y = 1000
+camera.position.y = 100
 camera.rotation.x = - Math.PI / 2
+camera.rotation.y = - Math.PI / 4
+camera.rotation.z = - Math.PI / 2
 
 const waterNormals = new THREE.ImageUtils.loadTexture('assets/images/normal.png')
 waterNormals.wrapS = THREE.RepeatWrapping
 waterNormals.wrapT = THREE.RepeatWrapping
 
-const water = new THREE.Water(renderer, camera, scene, {
+const water = new THREE.Water(renderer, camera, scene,
+{
     waterNormals : waterNormals,
     waterColor   : 0x1F4F4F,
 })
