@@ -10,3 +10,5 @@ use \Documentary\Controllers as DC;
 // Home
 $app->get('/',  DC\Page::class . ':getHome')->setName('home');
 $app->post('/', DC\Page::class . ':postHome');
+
+$app->get('/chapter',  DC\Page::class . ':getChapter')->setName('chapter');

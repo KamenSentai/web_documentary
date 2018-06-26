@@ -41,4 +41,9 @@ class Page
     {
         return $this->container->view->render($response, 'pages/home.twig', $this->container->postHome);
     }
+
+    public function getChapter(Request $request, Response $response)
+    {
+        return $this->container->view->render($response, 'pages/chapter.twig');
+    }
 }
