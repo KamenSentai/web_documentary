@@ -1,0 +1,93 @@
+$maxLink = 5
+
+.button--menu
+    position absolute
+    left 3rem
+    bottom 3rem
+    font-family PNR
+    cursor pointer
+    transform translateY(-25%)
+    opacity 0.75
+    composite(transform, 0.5s, cubic-bezier(0, 1, 1, 1.50))
+    perspective 750px
+    &:hover
+        transform none
+        .button--circle
+            transform translate(-50%, -50%) scale(1)
+        .button--text
+            transform translateX(-50%)
+            opacity 1
+        for num in (1..$maxLink)
+            .button--button:nth-of-type({num})
+                $rotate = (num - 1) * 90 / ($maxLink - 1) * 1deg - 90deg
+                transform rotateZ($rotate) translateX(10rem) scale(0.875)
+                &:hover
+                    transform rotateZ($rotate) translateX(10rem) scale(1)
+                .button--title
+                    transform translateY(-50%) rotate(- $rotate / 1.875)
+                    opacity 1
+
+    .button--circle
+        position absolute
+        left 50%
+        top 50%
+        width 20rem
+        height 20rem
+        border-radius 50%
+        border 0.125rem solid #09375A
+        transform translate(-50%, -50%) scale(0)
+        composite(transform, 0.5s, ease-out)
+
+    .button--main
+        display inline-block
+    .button--img
+        width 2rem
+        height auto
+    .button--text
+        position absolute
+        left 50%
+        top 112.5%
+        font-size 0.75rem
+        text-transform uppercase
+        transform-origin 0 0 - 0.25rem
+        transform translateX(-50%) rotateX(90deg)
+        opacity 0
+        composites(0.5s, ease-out, 0.5s, ease-out)
+
+    .button--button
+        display block
+        position absolute
+        left 0
+        top 0
+        width 2.5rem
+        height 2.5rem
+        background #09375A
+        border 0.625rem solid #fff
+        border-radius 50%
+        transform-origin 50% 50%
+        composite(transform, 0.5s, ease-out)
+        .button--title
+            position absolute
+            left 200%
+            top 50%
+            white-space nowrap
+            transform-origin -1.875rem 50%
+            composites(0.5s, ease-out, 0.5s, ease-out)
+            &::before
+                content ''
+                position absolute
+                top 50%
+                width 100%
+                height 625%
+                right 0
+                width calc(100% + 1.875rem + 1.25rem)
+                transform translateY(-50%)
+
+    for num in (1..$maxLink)
+        .button--button:nth-of-type({num})
+            $rotate = (num - 1) * 90 / ($maxLink - 1) * 1deg - 90deg
+            transform rotateZ($rotate) translateX(0) scale(0)
+            .button--title
+                transition-delay num * 0.125s
+                transform translateY(-50%) rotate(- $rotate / 1.875) translateX(-0.625rem)
+                opacity 0
