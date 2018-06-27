@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () =>
 
             change: function ()
             {
-                setMenu(this.newContainer.querySelector('.menu'))
+                setMenu(this.newContainer)
                 setMedias(this.newContainer.querySelector('.chapter-about-container'))
                 const $links = this.newContainer.querySelectorAll('a')
 

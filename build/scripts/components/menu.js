@@ -1,17 +1,19 @@
-export default function setMenu($menu = document.querySelector('.button--menu'))
+export default function setMenu($container = document.querySelector('.barba-container'))
 {
+    const $menu = $container.querySelector('.button--menu')
+
     if ($menu)
     {
         const $menuX = $menu.offsetLeft + $menu.offsetWidth / 2
         const $menuY = $menu.offsetTop + $menu.offsetHeight / 2
-        
+    
         const $circle       = $menu.querySelector('.button--circle')
         const $circleRadius = $circle.offsetWidth / 2
-        
-        const $main = $menu.querySelector('.button--main')
-        
-        const easing = {x: 0, y: 0}
     
+        const $main = $menu.querySelector('.button--main')
+    
+        const easing = {x: 0, y: 0}
+
         const $overlay = document.createElement('div')
         $overlay.style.zIndex          = '-1'
         $overlay.style.position        = 'absolute'
@@ -23,8 +25,8 @@ export default function setMenu($menu = document.querySelector('.button--menu'))
         $overlay.style.transition      = 'opacity 0.5s ease-out'
         $overlay.style.opacity         = '0'
         $overlay.style.willChange      = 'opacity'
-        document.querySelector('.barba-container').insertBefore($overlay, $menu)
-    
+        $container.insertBefore($overlay, $menu)
+
         window.addEventListener('mousemove', event =>
         {
             const deltaX = event.clientX - $menuX
@@ -39,12 +41,12 @@ export default function setMenu($menu = document.querySelector('.button--menu'))
             {
                 easing.x -= Math.abs(((deltaX / 25) - easing.x) * 0.1)
                 easing.y -= Math.abs(((deltaY / 25) - easing.y) * 0.1)
-        
+
                 easing.x = Math.max(easing.x, 0)
                 easing.y = Math.max(easing.y, 0)
             }
             $main.style.transform = `translate(${easing.x}px, ${easing.y}px)`
-    
+
             if ($menu.contains(event.target) || $menu == event.target)
             {
                 $overlay.style.opacity = '1'
