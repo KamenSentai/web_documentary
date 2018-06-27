@@ -24,9 +24,16 @@
     top -2.5rem
     width 5rem
     height 5rem
+.explorer--target
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
     font-family PNL
     opacity 0.5
-    composite(opacity, 0.5s, ease-out)
+    transform translateY(-12.5%)
+    composites(0.5s, ease-in-out, 0.5s, ease-out)
     &::before
         pseudo-element()
         background-color $blue
@@ -65,5 +72,7 @@ for num in (1..$maxLink)
         $translateX = num * 100vw / ($maxLink + 1)
         $translateY = num * 100vh / ($maxLink + 1)
         transform translate($translateX, $translateY)
-        &::after
-            content '' + num
+        .explorer--target
+            animation toggleY 5s ease-in-out infinite ((num - 1) * 1s)
+            &::after
+                content '' + num
