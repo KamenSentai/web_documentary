@@ -13,7 +13,7 @@ document.body.insertBefore(renderer.domElement, document.body.firstChild)
 const camera = new THREE.PerspectiveCamera(50, ratioWindow, 1, 100000)
 camera.position.y = 100
 camera.rotation.x = - Math.PI / 2
-camera.rotation.y = - Math.PI / 4
+camera.rotation.y = - Math.PI / 3
 camera.rotation.z = - Math.PI / 2
 
 const waterNormals = new THREE.ImageUtils.loadTexture('assets/images/normal.png')
