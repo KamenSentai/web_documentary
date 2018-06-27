@@ -1,0 +1,64 @@
+{% extends 'index.twig' %}
+
+{% block html %}
+
+    {% embed './partials/head.twig' %}
+        {% block title %}L'or bleu | Chapitre {{ chapter.number }}{% endblock %}
+    {% endembed %}
+
+    {% embed './partials/body.twig' %}
+        {% block body %}
+            <div id="barba-wrapper">
+                <div class="barba-container">
+                    <h2 class="chapter-header" data-baseurl="{{ base_url() }}/">
+                        <a class="home" href="{{ path_for('home') }}" title="L'or bleu">L'or bleu</a> &#62; <a class="chapters" href="{{ path_for('explorer') }}" title="Explorer">Explorer</a>
+                    </h2>
+                    <h1 class="chapter-title" data-baseurl="{{ base_url() }}/">{{ chapter.title | raw }}</h1>
+                    <span class="slide-chapter">Chapitre</span>
+                    <span class="slide-chapter-number">2</span>
+                    <div class="slide-chapter-line"></div>
+                    <div class="slide-chapter-text">
+                        <h3 class="slide-title">
+                            L'utilisation de l'eau<br>
+                            Dans nos sociétés
+                        </h3>
+                        Entre agriculture, industrie et quotidien, la quantité d’eau a drastiquement diminué au cours de ces dernières années.
+                    </div>
+                    <div class="slide2-container1">
+                        <div class="slide2-bar1">
+                            <div class="slide2-bar1-fill"></div>
+                        </div>
+                        <div class="slide2-text-container">
+                            <span class="slide2-subtitle">Terres cultivées<br></span>
+                            <span class="slide2-number">+ 12 %<br></span>
+                        </div>
+                    </div>
+                    <div class="slide2-container2">
+                        <div class="slide2-bar2">
+                            <div class="slide2-bar2-fill"></div>
+                        </div>
+                        <div class="slide2-text-container">
+                            <span class="slide2-subtitle">Surfaces irriguées<br></span>
+                            <span class="slide2-number">+ 117 %<br></span>
+                        </div>
+                    </div>
+                    <div class="slide2-container3">
+                        <div class="infos">Comment l'expliquer ?</div>
+                        <div class="infos">Quelles conséquences ?</div>
+                    </div>
+                    <div class="chapter-explore-button">
+                        {% include './layouts/cursor.twig' %}
+                        <span class="chapter-explore-text">Explorer</span>
+                    </div>
+                    <div class="chapter-medias-button">
+                        {% include './layouts/lock.twig' %}
+                        <span class="chapter-medias-text">Medias</span>
+                    </div>
+                    {% include './layouts/sidebar.twig' %}
+                    {% include './layouts/menu.twig' %}
+                </div>
+            </div>
+        {% endblock %}
+    {% endembed %}
+
+{% endblock %}
