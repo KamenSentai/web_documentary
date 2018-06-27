@@ -13,5 +13,5 @@ $app->get('/', DC\Page::class . ':getHome')->setName('home');
 // Chapter
 $app->get('/chapters/{slug:[a-z-]+}', DC\Page::class . ':getChapter')->setName('chapter');
 
-// Explorer
-$app->get('/explorer', DC\Page::class . ':getExplorer')->setName('explorer');
+// Chapters
+$app->get('/chapters', DC\Page::class . ':getchapters')->setName('chapters');

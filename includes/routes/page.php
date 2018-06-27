@@ -5,8 +5,8 @@ use \Documentary\Models      as DM;
 use \Documentary\Views       as DV;
 use \Documentary\Controllers as DC;
 
-// Explore
-$container['getExplorer'] = function($container)
+// Chapters
+$container['getChapters'] = function($container)
 {
     // Data view
     $dataView =

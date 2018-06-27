@@ -63,8 +63,8 @@ class Page
      * @param object $response
      * @return object $this->container->view->render()
      */
-    public function getExplorer(Request $request, Response $response)
+    public function getChapters(Request $request, Response $response)
     {
-        return $this->container->view->render($response, 'pages/explorer.twig', $this->container->getExplorer);
+        return $this->container->view->render($response, 'pages/chapters.twig', $this->container->getChapters);
     }
 }
