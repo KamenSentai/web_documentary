@@ -3,7 +3,7 @@
 {% block html %}
 
     {% embed './partials/head.twig' %}
-        {% block title %}Chapitre{% endblock %}
+        {% block title %}L'or bleu | Chapitre {{ chapter.number }}{% endblock %}
     {% endembed %}
 
     {% embed './partials/body.twig' %}
@@ -20,7 +20,7 @@
             </div>
             <div class="chapter-medias-button">
                 {% include './layouts/lock.twig' %}
-               <span class="chapter-medias-text">Medias</span>
+                <span class="chapter-medias-text">Medias</span>
             </div>
             {% include './layouts/sidebar.twig' %}
             {% include './layouts/menu.twig' %}

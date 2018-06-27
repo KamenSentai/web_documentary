@@ -8,7 +8,10 @@ use \Documentary\Views       as DV;
 use \Documentary\Controllers as DC;
 
 // Home
-$app->get('/',  DC\Page::class . ':getHome')->setName('home');
+$app->get('/', DC\Page::class . ':getHome')->setName('home');
 
 // Chapter
-$app->get('/chapters/{slug:[a-z-]+}',  DC\Page::class . ':getChapter')->setName('chapter');
+$app->get('/chapters/{slug:[a-z-]+}', DC\Page::class . ':getChapter')->setName('chapter');
+
+// Explorer
+$app->get('/explorer', DC\Page::class . ':getExplorer')->setName('explorer');

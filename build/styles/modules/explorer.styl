@@ -1,0 +1,69 @@
+.explorer-title
+    position absolute
+    left 2.5rem
+    top 2.5rem
+    font-family PNL
+    text-transform uppercase
+    &::after
+        content ''
+        position absolute
+        left 0
+        top 112.5%
+        width 100%
+        height 0.0625rem
+        background-color #fff
+        transform-origin 0 0
+        transform scaleX(0)
+        composite(transform, 0.5s, ease-out)
+    &:hover::after
+        transform none
+
+.explorer--button
+    position absolute
+    left -2.5rem
+    top -2.5rem
+    width 5rem
+    height 5rem
+    font-family PNL
+    opacity 0.5
+    composite(opacity, 0.5s, ease-out)
+    &::before
+        pseudo-element()
+        background-color $blue
+        border 1.25rem solid #fff
+        border-radius 50%
+        transform scale(0.75)
+    &::after
+        position absolute
+        center()
+        transform translate(-50%, -50%) scale(0.75)
+    &::before, &::after
+        composite(transform, 0.5s, ease-out)
+    &:hover
+        opacity 1
+        &::before
+            transform none
+        &::after
+            transform translate(-50%, -50%)
+    .explorer--span
+        position absolute
+        left 50%
+        top 112.5%
+        text-align center
+        white-space nowrap
+        transform translateX(-50%)
+        &::after
+            content ''
+            position absolute
+            left 0
+            bottom 0
+            width 100%
+            height calc(100% + 5rem / 4 + 5rem)
+
+for num in (1..$maxLink)
+    .explorer--button:nth-of-type({num})
+        $translateX = num * 100vw / ($maxLink + 1)
+        $translateY = num * 100vh / ($maxLink + 1)
+        transform translate($translateX, $translateY)
+        &::after
+            content '' + num
