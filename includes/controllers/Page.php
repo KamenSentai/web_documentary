@@ -27,7 +27,7 @@ class Page
      */
     public function getHome(Request $request, Response $response)
     {
-        return $this->container->view->render($response, 'pages/home.twig', $this->container->getHome);
+        return $this->container->view->render($response, 'pages/home.twig');
     }
 
     /**

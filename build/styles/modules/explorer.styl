@@ -70,7 +70,7 @@
 for num in (1..$maxLink)
     .explorer--button:nth-of-type({num})
         $translateX = num * 100vw / ($maxLink + 1)
-        $translateY = num * 100vh / ($maxLink + 1)
+        $translateY = num * 100vh / ($maxLink + 1) / 2 + 25vh
         transform translate($translateX, $translateY)
         .explorer--target
             animation toggleY 5s ease-in-out infinite ((num - 1) * 1s)
