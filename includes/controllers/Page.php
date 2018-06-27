@@ -67,4 +67,14 @@ class Page
     {
         return $this->container->view->render($response, 'pages/explorer.twig', $this->container->getExplorer);
     }
+    
+    /**
+     * @param object $request
+     * @param object $response
+     * @return object $this->container->view->render()
+     */
+    public function getChapter1slide1(Request $request, Response $response)
+    {
+        return $this->container->view->render($response, 'pages/chapter1slide1.twig');
+    }
 }
