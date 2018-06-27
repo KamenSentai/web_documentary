@@ -1,0 +1,20 @@
+{% extends 'index.twig' %}
+
+{% block html %}
+
+    {% embed './partials/head.twig' %}
+        {% block title %}L'or bleu | Exploration{% endblock %}
+    {% endembed %}
+
+    {% embed './partials/body.twig' %}
+        {% block body %}
+            <h1 class="explorer-title" data-baseurl="{{ base_url() }}/"><a href="{{ base_url() }}/" title="L'or bleu">L'or bleu</a></h1>
+            {% for _chapter in chapters %}
+                <a href="{{ path_for('chapter', {slug: _chapter.slug}) }}" class="explorer--button">
+                    <span class="explorer--span">{{ _chapter.title | raw }}</span>
+                </a>
+            {% endfor %}
+        {% endblock %}
+    {% endembed %}
+
+{% endblock %}

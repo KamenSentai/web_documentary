@@ -57,4 +57,14 @@ class Page
 
         return $this->container->view->render($response, 'pages/chapter.twig', $dataView);
     }
+
+    /**
+     * @param object $request
+     * @param object $response
+     * @return object $this->container->view->render()
+     */
+    public function getExplorer(Request $request, Response $response)
+    {
+        return $this->container->view->render($response, 'pages/explorer.twig', $this->container->getExplorer);
+    }
 }

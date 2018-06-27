@@ -5,13 +5,13 @@ use \Documentary\Models      as DM;
 use \Documentary\Views       as DV;
 use \Documentary\Controllers as DC;
 
-// Home
-$container['getHome'] = function($container)
+// Explore
+$container['getExplorer'] = function($container)
 {
     // Data view
     $dataView =
     [
-
+        'chapters' => $container['chapters'],
     ];
     return $dataView;
 };
