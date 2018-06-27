@@ -4,19 +4,9 @@
         <img class="button--img" src="{{ base_url() }}/assets/images/drop.svg" alt="Water drop">
         <span class="button--text">Sommaire</span>
     </span>
-    <a href="#" class="button--button">
-        <span class="button--title">État des lieux</span>
-    </a>
-    <a href="#" class="button--button">
-        <span class="button--title">L'utilisation de l'eau</span>
-    </a>
-    <a href="#" class="button--button">
-        <span class="button--title">Gestion publique</span>
-    </a>
-    <a href="#" class="button--button">
-        <span class="button--title">Gestion privée</span>
-    </a>
-    <a href="#" class="button--button">
-        <span class="button--title">Le droit ou le besoin</span>
-    </a>
+    {% for _chapter in chapters %}
+        <a href="{{ path_for('chapter', {slug: _chapter.slug}) }}" class="button--button">
+            <span class="button--title">{{ _chapter.section }}</span>
+        </a>
+    {% endfor %}
 </span>

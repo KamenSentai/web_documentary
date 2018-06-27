@@ -51,7 +51,8 @@ class Page
         else
             $dataView =
             [
-                'chapter' => $chapter,
+                'chapters' => $chapters,
+                'chapter'  => $chapter,
             ];
 
         return $this->container->view->render($response, 'pages/chapter.twig', $dataView);
