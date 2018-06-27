@@ -2,6 +2,9 @@ let windowWidth  = window.innerWidth
 let windowHeight = window.innerHeight
 let ratioWindow  = windowWidth / windowHeight
 
+const $h1 = document.querySelector('h1')
+const baseUrl = $h1.dataset.baseurl || ''
+
 const scene = new THREE.Scene()
 
 const renderer = new THREE.WebGLRenderer()
@@ -16,7 +19,7 @@ camera.rotation.x = - Math.PI / 2
 camera.rotation.y = - Math.PI / 3
 camera.rotation.z = - Math.PI / 2
 
-const waterNormals = new THREE.ImageUtils.loadTexture('assets/images/normal.png')
+const waterNormals = new THREE.ImageUtils.loadTexture(baseUrl + 'assets/images/normal.png')
 waterNormals.wrapS = THREE.RepeatWrapping
 waterNormals.wrapT = THREE.RepeatWrapping
 
@@ -41,7 +44,7 @@ cubeMap.format = THREE.RGBFormat
 
 const loader = new THREE.ImageLoader()
 
-loader.load('assets/images/skybox.png', (image) =>
+loader.load(baseUrl + 'assets/images/skybox.png', (image) =>
 {
     const getSide = (x, y) =>
     {

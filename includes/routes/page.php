@@ -15,15 +15,6 @@ $container['getHome'] = function($container)
     ];
     return $dataView;
 };
-$container['postHome'] = function($container)
-{
-    // Data view
-    $dataView =
-    [
-
-    ];
-    return $dataView;
-};
 
 // 404
 $container['notFoundHandler'] = function($container)

@@ -34,3 +34,19 @@ $container['database'] = function($container)
 
     return $database;
 };
+
+// Chapters
+$container['chapters'] = function($container)
+{
+    $chapters =
+    [
+        [
+            'number' => 1,
+            'title' => 'Voyage au fil<br>de l\'eau',
+            'paragraph' => 'Chaque minute, cinq personnes meurent dans le monde parce qu’elles n’ont pas accès à l’eau potable.',
+            'slug' => 'introduction',
+        ],
+    ];
+
+    return $chapters;
+};

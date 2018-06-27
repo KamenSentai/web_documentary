@@ -8,12 +8,12 @@
 
     {% embed './partials/body.twig' %}
         {% block body %}
-            <h1 class="chapter-title">Voyage au fil <br> de l'eau</h1>
+            <h1 class="chapter-title" data-baseurl="{{ base_url() }}/">{{ chapter.title | raw }}</h1>
             <div class="chapter-number-container">
                 <span class="chapter-number">1</span>
                 <div class="chapter-line"></div>
             </div>
-            <p class="chapter-p">Chaque minute, cinq personnes meurent dans le monde parce qu’elles n’ont pas accès à l’eau potable.</p>
+            <p class="chapter-p">{{ chapter.paragraph | raw }}</p>
             <div class="chapter-explore-button">
                 {% include './layouts/cursor.twig' %}
                 <span class="chapter-explore-text">Explorer</span>
@@ -49,6 +49,7 @@
                     François Pumir
                 </div>
             </div>
+            {% include './layouts/menu.twig' %}
         {% endblock %}
     {% endembed %}
 
