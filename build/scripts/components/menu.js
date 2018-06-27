@@ -11,7 +11,20 @@ if ($menu)
     const $main = $menu.querySelector('.button--main')
     
     const easing = {x: 0, y: 0}
-    
+
+    const $overlay = document.createElement('div')
+    $overlay.style.zIndex          = '-1'
+    $overlay.style.position        = 'absolute'
+    $overlay.style.left            = '0'
+    $overlay.style.top             = '0'
+    $overlay.style.width           = '100%'
+    $overlay.style.height          = '100%'
+    $overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.75)'
+    $overlay.style.transition      = 'opacity 0.5s ease-out'
+    $overlay.style.opacity         = '0'
+    $overlay.style.willChange      = 'opacity'
+    document.body.insertBefore($overlay, $menu)
+
     window.addEventListener('mousemove', event =>
     {
         const deltaX = event.clientX - $menuX
@@ -31,5 +44,16 @@ if ($menu)
             easing.y = Math.max(easing.y, 0)
         }
         $main.style.transform = `translate(${easing.x}px, ${easing.y}px)`
+
+        if ($menu.contains(event.target) || $menu == event.target)
+        {
+            $overlay.style.opacity = '1'
+            $overlay.style.zIndex  = '1'
+        }
+        else
+        {
+            $overlay.style.opacity = '0'
+            $overlay.style.zIndex  = '-1'
+        }
     })
 }
