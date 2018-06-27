@@ -35,7 +35,7 @@ export default function setMedias(medias = document.querySelector('.chapter-abou
     
         title3.addEventListener('click', (event) => {
             title3.classList.remove('hidden')
-            text1.classList.remove('hidden')
+            text3.classList.remove('hidden')
             title1.classList.add('hidden')
             text1.classList.add('hidden')
             title2.classList.add('hidden')
