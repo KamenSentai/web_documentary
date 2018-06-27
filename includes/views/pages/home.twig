@@ -8,12 +8,16 @@
 
     {% embed './partials/body.twig' %}
         {% block body %}
-            <h1 class="homeTitle abs">L'or bleu</h1>
-            <a class="linkHome" href="{{ path_for('explorer') }}">
-                <div  class="waterPathButton abs">
-                    Suivre le chemin<br/>de l'eau
+            <div id="barba-wrapper">
+                <div class="barba-container">
+                    <h1 class="homeTitle abs">L'or bleu</h1>
+                    <a class="linkHome" href="{{ path_for('explorer') }}">
+                        <div  class="waterPathButton abs">
+                            Suivre le chemin<br/>de l'eau
+                        </div>
+                    </a>
                 </div>
-            </a>
+            </div>
         {% endblock %}
     {% endembed %}
 

@@ -8,22 +8,26 @@
 
     {% embed './partials/body.twig' %}
         {% block body %}
-            <div class="chapter-number-container">
-                <span class="chapter-number">{{ chapter.number }}</span>
-                <div class="chapter-line"></div>
+            <div id="barba-wrapper">
+                <div class="barba-container">
+                    <div class="chapter-number-container">
+                        <span class="chapter-number">{{ chapter.number }}</span>
+                        <div class="chapter-line"></div>
+                    </div>
+                    <h1 class="chapter-title" data-baseurl="{{ base_url() }}/">{{ chapter.title | raw }}</h1>
+                    <p class="chapter-p">{{ chapter.paragraph | raw }}</p>
+                    <div class="chapter-explore-button">
+                        {% include './layouts/cursor.twig' %}
+                        <span class="chapter-explore-text">Explorer</span>
+                    </div>
+                    <div class="chapter-medias-button">
+                        {% include './layouts/lock.twig' %}
+                        <span class="chapter-medias-text">Medias</span>
+                    </div>
+                    {% include './layouts/sidebar.twig' %}
+                    {% include './layouts/menu.twig' %}
+                </div>
             </div>
-            <h1 class="chapter-title" data-baseurl="{{ base_url() }}/">{{ chapter.title | raw }}</h1>
-            <p class="chapter-p">{{ chapter.paragraph | raw }}</p>
-            <div class="chapter-explore-button">
-                {% include './layouts/cursor.twig' %}
-                <span class="chapter-explore-text">Explorer</span>
-            </div>
-            <div class="chapter-medias-button">
-                {% include './layouts/lock.twig' %}
-                <span class="chapter-medias-text">Medias</span>
-            </div>
-            {% include './layouts/sidebar.twig' %}
-            {% include './layouts/menu.twig' %}
         {% endblock %}
     {% endembed %}
 
