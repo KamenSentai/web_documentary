@@ -4,19 +4,21 @@
     top 2.5rem
     font-family PNL
     text-transform uppercase
-    &::after
-        content ''
-        position absolute
-        left 0
-        top 112.5%
-        width 100%
-        height 0.0625rem
-        background-color #fff
-        transform-origin 0 0
-        transform scaleX(0)
-        composite(transform, 0.5s, ease-out)
-    &:hover::after
-        transform none
+    a
+        position relative
+        &::after
+            content ''
+            position absolute
+            left 0
+            top 112.5%
+            width 100%
+            height 0.0625rem
+            background-color #fff
+            transform-origin 0 0
+            transform scaleX(0)
+            composite(transform, 0.5s, ease-out)
+        &:hover::after
+            transform none
 
 .chapter-title
     center()
