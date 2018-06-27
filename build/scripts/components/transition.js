@@ -1,6 +1,8 @@
 import setMenu from './menu'
+import setMedias from './medias'
 
 setMenu()
+setMedias()
 const $links = document.querySelectorAll('a')
 
 for (const $link of $links)
@@ -30,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () =>
             change: function ()
             {
                 setMenu(this.newContainer.querySelector('.menu'))
+                setMedias(this.newContainer.querySelector('.chapter-about-container'))
                 const $links = this.newContainer.querySelectorAll('a')
 
                 for (const $link of $links)
