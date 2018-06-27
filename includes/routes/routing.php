@@ -18,3 +18,6 @@ $app->get('/explorer', DC\Page::class . ':getExplorer')->setName('explorer');
 
 // Chapter1slide1
 $app->get('/chapter1slide1', DC\Page::class . ':getChapter1slide1')->setName('chapter1slide1');
+
+// Chapters
+$app->get('/chapters', DC\Page::class . ':getchapters')->setName('chapters');
