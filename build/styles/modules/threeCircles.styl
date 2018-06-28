@@ -1,56 +1,153 @@
-.chapter2-container-circles
-    center()
-    top 57%
-    z-index 11
-    .chapter2-line1
-        center()
-        left -32.2vw
-        size(37vw, 0.3vh)
-        background #0086F0
-    .chapter2-line2
-        center()
-        left 32.2vw
-        size(37vw, 0.3vh)
-        background #0086F0
-    .chapter2-circle1
-        center()
-        size(60vh, 60vh)
-        border-radius 50%
-        border 1px solid #0086F0
-    .chapter2-circle2
-        center()
-        z-index 12
-        size(50vh, 50vh)
-        border-radius 50%
-        border 1px solid #FFFFFF
-        opacity 0.5
-    .chapter2-circle2:hover
-        opacity 1
-    .chapter2-circle3
-        center()
-        z-index 13
-        size(40vh, 40vh)
-        border-radius 50%
-        border 1px solid #FFFFFF
-        opacity 0.5
-    .chapter2-circle3:hover
-        opacity 1
-    .chapter2-circle4
-        center()
-        z-index 14
-        size(30vh, 30vh)
-        border-radius 50%
-        border 1px solid #FFFFFF
-        opacity 0.5
-    .chapter2-circle4:hover
-        opacity 1
-    .circle-text
-        center()
-        z-index 15
+$percentage-1 = 70
+$translate-1 = - 2.5rem * $percentage-1
+$percentage-2 = 20
+$translate-2 = - 2.5rem * $percentage-2
+$percentage-3 = 10
+$translate-3 = - 2.5rem * $percentage-3
+$lightBlue = #0086F0
+$strokeWidth = 0.25rem
+
+.area.threeCircles
+    position relative
+    composite(transform, 0.5s, ease-out)
+    .container-circle
+        display flex
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        for num in (1..3)
+            &.container-{num}
+                $translate = (num - 1) * 100vw
+                transform translateX($translate)
+        .prev,
+        .next
+            &.hidden
+                display none
+            position absolute
+            height ($strokeWidth / 2)
+            width 12rem
+            background-color $lightBlue
+            top 50%
+            transform translateY(-50%)
+            opacity 0.5
+            composites(0.25s, ease-out, 0.25s, ease-out)
+            cursor pointer
+            &::before
+                content ''
+                position absolute
+                left 0
+                top 50%
+                width 100%
+                height 2000%
+                transform translateY(-50%)
+        .prev
+            left -3rem
+            &:hover
+                opacity 1
+                transform translate(25%, -50%)
+        .next
+            right -3rem
+            &:hover
+                opacity 1
+                transform translate(-25%, -50%)
+
+
+@keyframes chart-1-label
+    100%
+        transform translateY($translate-1)
+@keyframes chart-2-label
+    100%
+        transform translateY($translate-2)
+@keyframes chart-3-label
+    100%
+        transform translateY($translate-3)
+
+@keyframes offset
+    100%
+        stroke-dashoffset 0
+
+.chart
+    width 100%
+    height 100%
+    margin 0
+    position relative
+    font-family PNR
+    &.animate svg .circle-foreground
+        animation offset 3s ease-in-out forwards
+        animation-delay 1s
+    &.animate figcaption::after
+        animation-delay 1s
+    &.chart-1
+        &.animate figcaption::after
+            animation chart-1-label 3s steps($percentage-1) forwards
+        svg
+            .circle-foreground
+                stroke-dasharray 54.42804675rem 77.7543525rem
+                stroke-dashoffset 54.42804675rem
+
+    &.chart-2
+        &.animate figcaption::after
+            animation chart-2-label 3s steps($percentage-2) forwards
+        svg
+            .circle-foreground
+                stroke-dasharray 15.5508705rem 77.7543525rem
+                stroke-dashoffset 15.5508705rem
+
+    &.chart-3
+        &.animate figcaption::after
+            animation chart-3-label 3s steps($percentage-3) forwards
+        svg
+            .circle-foreground
+                stroke-dasharray 7.77543525rem 77.7543525rem
+                stroke-dashoffset 7.77543525rem
+
+    svg
+        width 100%
+        height 100%
+        .circle-around
+            r 15rem
+            cx 50%
+            cy 50%
+            fill none
+            stroke rgba($lightBlue, 0.5)
+            stroke-width $strokeWidth / 2
+        .circle-background,
+        .circle-foreground
+            r 12.375rem
+            cx 50%
+            cy 50%
+            fill none
+            stroke #fff
+            stroke-width $strokeWidth / 2
+        .circle-foreground
+            stroke $lightBlue
+            stroke-width $strokeWidth * 2
+            stroke-linecap round
+            transform-origin 50% 50%
+            transform rotate(-90deg)
+    figcaption
+        display inline-block
+        width 100%
+        height 2.5rem
+        overflow hidden
         text-align center
-        font-family PNR
-        font-size 3vh
-        line-height 1.5
-        .circle-number
-            font-family PNB
-            font-size 5vh
+        position absolute
+        top calc(50% - 1.25rem)
+        left 0
+        font-size 0
+        &::after
+            display inline-block
+            content '0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a'
+            white-space pre
+            font-size 2.5rem
+            line-height 2.5rem
+    .label
+        position absolute
+        top calc(50% + 1.25rem)
+        left 0
+        width 100%
+        font-family PNL
+        text-transform uppercase
+        text-align center

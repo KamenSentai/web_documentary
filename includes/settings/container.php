@@ -98,20 +98,23 @@ $container['chapters'] = function($container)
             'slide_1' =>
             [
                 'type'     => 'threeCircles',
-                'circle_1' =>
+                'circles'  =>
                 [
-                    'number' => '70',
-                    'text'   => 'Agriculture',
-                ],
-                'circle_2' =>
-                [
-                    'number' => '20',
-                    'text'   => 'Industries',
-                ],
-                'circle_3' =>
-                [
-                    'number' => '10',
-                    'text'   => 'Humains',
+                    'circle_1' =>
+                    [
+                        'number' => '70',
+                        'text'   => 'Agriculture',
+                    ],
+                    'circle_2' =>
+                    [
+                        'number' => '20',
+                        'text'   => 'Industries',
+                    ],
+                    'circle_3' =>
+                    [
+                        'number' => '10',
+                        'text'   => 'Humains',
+                    ],
                 ],
             ],
             'slide_2' =>
