@@ -3,4 +3,13 @@
     <div class="slide3-container2-label">{{ _slide.label }}<br></div>
     <div class="slide3-container2-text">{{ _slide.text }}<br></div>
     <div class="slide3-container2-text-border"></div>
+    {% if _slide.button is defined %}
+        <button class="slide3-button">{{ _slide.button }}</button>
+        <div class="slide3-button-pop">
+            <span class="pop-title">{{ _slide.button }}</span>
+            <div class="slide3-container2-text-border"></div>
+            <p class="pop-description">{{ _slide.description | raw }}</p>
+            <button class="pop-button-close">&#x2715;</button>
+        </div>
+    {% endif %}
 </div>

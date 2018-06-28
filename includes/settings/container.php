@@ -299,8 +299,8 @@ $container['chapters'] = function($container)
                 'label'       => 'UNE AFFOLANTE COURSE VERS L’EAU',
                 'text'        => 'Si aujourd’hui l’eau potable est abondante, et 70% des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à 50 ans, un bien plus précieux que le pétrole.',
                 'button'      => 'Quel avenir ?',
-                'description' => 'Si l’eau venait à devenir un actif financier, la spéculation sur les prix de l’eau potable pourrait être catastrophique pour les pays du tiers monde.<br>
-                Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment aucun surcoût pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait tuer des millions d’être humains sur la planète.<br>                 
+                'description' => 'Si l’eau venait à devenir un actif financier, la spéculation sur les prix de l’eau potable pourrait être catastrophique pour les pays du tiers monde.<br><br>
+                Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment aucun surcoût pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait tuer des millions d’être humains sur la planète.<br><br>
                 Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
             ],
             'slide_3' =>

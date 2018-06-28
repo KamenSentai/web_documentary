@@ -3,12 +3,14 @@ import setMedias from './medias'
 import setSlider from './slider'
 import setPopup from './popup'
 import setSideBarWave from './wave'
+import setInfos from './infos'
 
 setMenu()
 setMedias()
 setSlider()
 setPopup()
 setSideBarWave()
+setInfos()
 const $links = document.querySelectorAll('a')
 
 for (const $link of $links)
