@@ -1,6 +1,6 @@
 .chapter-about-container
     position absolute
-    left 110%
+    left 100%
     top 0
     size(40%, 100%)
     padding 3rem
@@ -8,7 +8,17 @@
     composite(transform, 1s, ease)
     z-index 10
     &.active
-        transform translateX(-120%)
+        transform translateX(-100%)
+        .chapter-about-titles,
+        .chapter-about-text
+            opacity 1
+            transform translateX(0)
+
+    .chapter-about-titles,
+    .chapter-about-text
+        opacity 0
+        transform translateX(20vw)
+        composites(1s, ease-out, 1s, ease-out)
 
     .chapter-about-titles
         display flex
@@ -43,9 +53,10 @@
 
     .about-close-button
         position absolute
-        bottom 3rem
-        right 3rem
+        bottom 4rem
+        right 4rem
         font-family PNL
+        font-size 2rem
         cursor pointer
         opacity 0.5
         composite(opacity, 0.5s, ease)
@@ -57,7 +68,7 @@
         z-index -1
         top 0
         bottom 0
-        left -10%
+        left 0
         right 0
     .placeHolder
         position absolute
@@ -65,5 +76,5 @@
         z-index -2
         top 0
         bottom 0
-        left 0
-        right 90%
+        left 30%
+        right 0

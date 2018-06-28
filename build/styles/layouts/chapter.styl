@@ -6,7 +6,13 @@ header
     height 17.5vh
     font-family PNL
     text-transform uppercase
+    opacity 1
+    composite(opacity, 0.5s, ease-out)
     z-index 5
+    &.scrolled
+        opacity 0.25
+        &:hover
+            opacity 1
     .chapter-nav
         position absolute
         left 3rem
