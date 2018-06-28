@@ -19,6 +19,10 @@
                             <span class="number">{{ chapter.number }}</span>
                             <div class="border"></div>
                         </div>
+                        <div class="chapter-pitch">
+                            <span class="title">{{ chapter.header.title | raw }}</span>
+                            <span class="text">{{ chapter.header.text | raw }}</span>
+                        </div>
                     </header>
                     <div class="slider">
                         <section class="slide">
