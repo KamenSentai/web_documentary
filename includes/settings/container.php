@@ -320,7 +320,7 @@ $container['chapters'] = function($container)
             ],
             'slide_3' =>
             [
-                'type'        => 'audio',
+                'type'        => 'video',
                 'title'       => 'NESTLÉ, PRIVATISER L\'EAU POUR MIEUX LA RÉPARTIR',
                 'text'        => '« We feed the world » - 2005 - Erwin Wagenhofer<br>
                 Interview du président de Nestlé, Peter Brabeck',

@@ -1,8 +1,11 @@
 <div  class="slide3-container1">
-    <img class="slide3-container1-title-background" src="{{ base_url() }}/assets/images/dirigeants.png">
+    <img class="slide3-container1-title-background" src="{{ base_url() }}/assets/images/dirigeants.png" alt="background">
     <div class="slide3-container1-subContainer1">
         <div class="slide3-container1-subContainer1-title">{{ _slide.title }}<br></div>
         <div class="slide3-container1-subContainer1-text">{{ _slide.text | raw }}<br></div>
         <div class="slide3-container1-subContainer1-audio"></div>
     </div>
+    <button class="slide4-button">Play</button>
 </div>
+
+<audio src="{{ base_url() }}/assets/audio/audio1.mp3" class="slide4-audio"></audio>
