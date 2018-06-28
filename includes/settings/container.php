@@ -382,6 +382,10 @@ $container['chapters'] = function($container)
                     'number' => '1,8 milliards',
                     'text'   => 'd\'humains s\'abreuvent à des points d\'eau contaminés par les matières fécales, etc.',
                 ],
+                'button'      => 'EN SAVOIR PLUS',
+                'name'        => 'EAU, INFINI ESPOIR',
+                'description' => 'Alors que se profile une pénurie mondiale, la question de la gestion de l’eau n’est presque pas posée. Nous n’avons toujours pas su définir ce que l’eau était pour l’homme en termes de droit international, nous n’avons pas réglé le problème de répartition de l’eau dans le monde, ains que celui du problème de la qualité de l’eau dans le monde.<br>
+                L’eau, illusion parfaite d’une ressource infinie, est aujourd’hui le dernier de nos soucis. Par manque de vision à long-terme et de prévoyance, il pourrait bien devenir le premier très rapidement, et ainsi s’ajouter à la longue liste de ce que la civilisation humaine aurait pu éviter.',
             ],
         ],
     ];

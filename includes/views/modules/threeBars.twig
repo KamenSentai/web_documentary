@@ -1,6 +1,6 @@
 <div class="slide1-container1">
     <div class="slide1-bar1">
-        <div class="slide1-bar1-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_1.number }}></div>
+        <div class="slide1-bar1-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_1.number }}"></div>
     </div>
     <div class="slide1-text-container">
         <span class="slide1-subtitle">{{ _slide.bar_1.title }}<br></span>
@@ -9,7 +9,7 @@
 </div>
 <div class="slide1-container2">
     <div class="slide1-bar2">
-        <div class="slide1-bar2-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_2.number }}></div>
+        <div class="slide1-bar2-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_2.number }}"></div>
     </div>
     <div class="slide1-text-container">
         <span class="slide1-subtitle">{{ _slide.bar_2.title }}<br></span>
@@ -23,3 +23,12 @@
         <span class="slide1-number">{{ _slide.bar_3.number }}<br></span><p class="slide1-text">{{ _slide.bar_3.text }}</p>
     </div>
 </div>
+{% if _slide.button is defined %}
+    <button class="slide6-button">{{ _slide.button }}</button>
+    <div class="slide6-button-pop">
+        <span class="pop-title">{{ _slide.button }}</span>
+        <div class="slide6-container2-text-border"></div>
+        <p class="pop-description">{{ _slide.description | raw }}</p>
+        <button class="pop-button-close2">&#x2715;</button>
+    </div>
+{% endif %}
