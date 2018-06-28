@@ -70,25 +70,28 @@ export default function setSlider($container = document.querySelector('.barba-co
 
         window.addEventListener('keydown', event =>
         {
-            switch (event.keyCode) {
-                case 38:
-                    if (transited > 0)
-                    {
-                        $slides[transited--].style.opacity = '0'
-                        $slider.style.transform = `translateY(${- transited * 100}vh)`
-                        $slides[transited].style.opacity = '1'
-                        transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
-                    }
-                    break
-                case 40:
-                    if (transited < $slides.length - 1)
-                    {
-                        $slides[transited++].style.opacity = '0'
-                        $slider.style.transform = `translateY(${- transited * 100}vh)`
-                        $slides[transited].style.opacity = '1'
-                        transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
-                    }
-                    break
+            if (!$container.querySelector('.chapter-about-container').classList.contains('active'))
+            {
+                switch (event.keyCode) {
+                    case 38:
+                        if (transited > 0)
+                        {
+                            $slides[transited--].style.opacity = '0'
+                            $slider.style.transform = `translateY(${- transited * 100}vh)`
+                            $slides[transited].style.opacity = '1'
+                            transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                        }
+                        break
+                    case 40:
+                        if (transited < $slides.length - 1)
+                        {
+                            $slides[transited++].style.opacity = '0'
+                            $slider.style.transform = `translateY(${- transited * 100}vh)`
+                            $slides[transited].style.opacity = '1'
+                            transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                        }
+                        break
+                }
             }
         })
     }

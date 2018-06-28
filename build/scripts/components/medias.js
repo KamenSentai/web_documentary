@@ -1,3 +1,5 @@
+export const $overlay = document.createElement('div')
+
 export default function setMedias($container = document.querySelector('.barba-container'))
 {
     const $medias = $container.querySelector('.chapter-about-container')
@@ -13,7 +15,7 @@ export default function setMedias($container = document.querySelector('.barba-co
         const text2 = $container.querySelector('.js-text2')
         const text3 = $container.querySelector('.js-text3')
 
-        const $overlay = document.createElement('div')
+        $overlay.classList.add('overlay-medias')
         $overlay.style.zIndex          = '-1'
         $overlay.style.position        = 'absolute'
         $overlay.style.left            = '0'
