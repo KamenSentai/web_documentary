@@ -1,6 +1,6 @@
 .slide2-container1
     position absolute
-    top 39%
+    bottom 0
     left 15%
     size(20vw, auto)
     .slide2-bar1
@@ -12,7 +12,7 @@
         .slide2-bar1-fill
             size(100%, 12%)
             background #0086F0
-            transform translateY(732%)
+            transform translateY(734%)
     .slide2-text-container
         display inline-block
         vertical-align top
@@ -28,7 +28,7 @@
             line-height 2
 .slide2-container2
     position absolute
-    top 33%
+    bottom 0
     left 30%
     size(20vw, auto)
     .slide2-bar2
@@ -52,8 +52,7 @@
             line-height 2
 .slide2-container3
     position absolute
-    top 34%
-    // top 40%
+    bottom 0
     left 55%
     size(27vw, auto)
     text-align center
@@ -63,25 +62,27 @@
         text-transform uppercase
         border 1px solid #ffffff
         padding 2vh 2vw
+        margin-bottom 2vh
         letter-spacing 0.2vw
-        margin-bottom 3vh
         cursor pointer
         composite(background, 0.5s, ease)
         composite(border, 0, ease)
-    .infos:hover
-        background #0086F0
-        border 1px solid #0086F0
-        composite(background, 0.5s, ease)
-        composite(border, 0, ease)
-    .infos2
-        font-family PNR
-        font-size 3vh
-        text-transform uppercase
-        background #0086F0
-        border 1px solid #0086F0
-        padding 2vh 2vw
-        letter-spacing 0.2vw
-        cursor pointer
+        transform translateY(-20vh)
+        &:hover
+            background #0086F0
+            border 1px solid #0086F0
+            composite(background, 0.5s, ease)
+            composite(border, 0, ease)
+        &.infos2
+            font-family PNR
+            font-size 3vh
+            text-transform uppercase
+            background #0086F0
+            border 1px solid #0086F0
+            padding 2vh 2vw
+            letter-spacing 0.2vw
+            margin-bottom 0
+            cursor pointer
     .infos2-text
         font-family PNR
         font-size 2.5vh
@@ -89,5 +90,6 @@
         color #01111D
         padding 5vh 4vw
         text-align left
+        display none
         .text-bold
             font-family PNB

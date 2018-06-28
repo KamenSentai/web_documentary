@@ -130,7 +130,7 @@ $container['chapters'] = function($container)
                 'popup_1' =>
                 [
                     'question' => 'Comment l\'expliquer ?',
-                    'text'     => 'L’irrigation constitue un outil de gestion efficace contre les <span class="text-bold">aléas</span> des précipitations. Elle permet de choisir des variétés à haut <span class="text-bold">rendement</span> en appliquant les fertilisants et traitements nécessaires.<br>L’irrigation rend ces cultures économiquement intéressantes, et a pour effet de favoriser l’augmentation des rendements.',
+                    'text'     => 'L’irrigation constitue un outil de gestion efficace contre les aléas des précipitations. Elle permet de choisir des variétés à haut <span class="text-bold">rendement</span> en appliquant les fertilisants et traitements nécessaires.<br>L’irrigation rend ces cultures économiquement intéressantes, et a pour effet de favoriser l’augmentation des rendements.',
                 ],
                 'popup_2' =>
                 [

@@ -1,10 +1,12 @@
 import setMenu from './menu'
 import setMedias from './medias'
 import setSlider from './slider'
+import setPopup from './popup'
 
 setMenu()
 setMedias()
 setSlider()
+setPopup()
 const $links = document.querySelectorAll('a')
 
 for (const $link of $links)
@@ -36,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () =>
                 setMenu(this.newContainer)
                 setMedias(this.newContainer)
                 setSlider(this.newContainer)
+                setPopup(this.newContainer)
                 const $links = this.newContainer.querySelectorAll('a')
 
                 for (const $link of $links)
