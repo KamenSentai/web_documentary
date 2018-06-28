@@ -13,6 +13,9 @@ header
         opacity 0.25
         &:hover
             opacity 1
+        .chapter-numberhead,
+        .chapter-pitch
+            opacity 1
     .chapter-nav
         position absolute
         left 3rem
@@ -33,6 +36,10 @@ header
                 composite(transform, 0.5s, ease-out)
             &:hover::after
                 transform none
+    .chapter-numberhead,
+    .chapter-pitch
+        opacity 0
+        composite(opacity, 0.5s, ease-out)
     .chapter-numberhead
         display flex
         flex-direction column
@@ -54,7 +61,7 @@ header
             margin auto auto 0 auto
             width 12.5vw
             height 0.25rem
-            background-color $blue
+            background-color rgba($blue, 0.5)
     .chapter-pitch
         display flex
         flex-direction column
