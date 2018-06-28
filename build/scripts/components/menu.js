@@ -4,6 +4,7 @@ export default function setMenu($container = document.querySelector('.barba-cont
 
     if ($menu)
     {
+        $menu.style.zIndex = '125'
         const $menuX = $menu.offsetLeft + $menu.offsetWidth / 2
         const $menuY = $menu.offsetTop + $menu.offsetHeight / 2
     
@@ -49,8 +50,8 @@ export default function setMenu($container = document.querySelector('.barba-cont
 
             if ($menu.contains(event.target) || $menu == event.target)
             {
-                $overlay.style.opacity = '1'
-                $overlay.style.zIndex  = '1'
+                $overlay.style.opacity = '100'
+                $overlay.style.zIndex  = '10'
             }
             else
             {
