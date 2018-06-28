@@ -67,34 +67,4 @@ class Page
     {
         return $this->container->view->render($response, 'pages/chapters.twig', $this->container->getChapters);
     }
-    
-    /**
-     * @param object $request
-     * @param object $response
-     * @return object $this->container->view->render()
-     */
-    public function getChapter1slide1(Request $request, Response $response)
-    {
-        return $this->container->view->render($response, 'pages/chapter1slide1.twig');
-    }
-
-    /**
-     * @param object $request
-     * @param object $response
-     * @return object $this->container->view->render()
-     */
-    public function getChapter2slide1(Request $request, Response $response)
-    {
-        return $this->container->view->render($response, 'pages/chapter2slide1.twig');
-    }
-
-    /**
-     * @param object $request
-     * @param object $response
-     * @return object $this->container->view->render()
-     */
-    public function getChapter2slide2(Request $request, Response $response)
-    {
-        return $this->container->view->render($response, 'pages/chapter2slide2.twig');
-    }
 }
