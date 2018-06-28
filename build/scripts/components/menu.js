@@ -50,7 +50,7 @@ export default function setMenu($container = document.querySelector('.barba-cont
 
             if ($menu.contains(event.target) || $menu == event.target)
             {
-                $overlay.style.opacity = '100'
+                $overlay.style.opacity = '1'
                 $overlay.style.zIndex  = '10'
             }
             else
