@@ -28,7 +28,6 @@ export default function setMedias($container = document.querySelector('.barba-co
 
         $mediasButton.addEventListener('click', () => {
             $medias.classList.add('active')
-            $medias.style.transform = 'translateX(0)'
             $overlay.style.opacity = '1'
             $overlay.style.zIndex  = '5'
         })
@@ -62,14 +61,12 @@ export default function setMedias($container = document.querySelector('.barba-co
 
         $closeButton.addEventListener('click', () => {
             $medias.classList.remove('active')
-            $medias.style.transform = 'translateX(40vw)'
             $overlay.style.opacity = '0'
             $overlay.style.zIndex  = '-1'
         })
 
         $overlay.addEventListener('click', () => {
             $medias.classList.remove('active')
-            $medias.style.transform = 'translateX(40vw)'
             $overlay.style.opacity = '0'
             $overlay.style.zIndex  = '-1'
         })
