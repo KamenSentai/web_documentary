@@ -48,7 +48,7 @@ $container['chapters'] = function($container)
         'header'    =>
         [
             'title' => 'La quantité d\'eau<br>à la surface de la Terre',
-            'text'  => 'L’eau qui coule de nos robinets semble infinie mais cette ressource naturelle se transforme peu à peu en valeur marchande.',
+            'text'  => 'L’eau qui coule de nos robinets semble infinie, mais cette<br>ressource naturelle se transforme peu à peu en valeur marchande.',
         ],
         'slides'    =>
         [
@@ -90,8 +90,8 @@ $container['chapters'] = function($container)
         'slug'      => 'utilisation',
         'header'    =>
         [
-            'title' => 'L\'utilisation de l\'eau<br>Dans nos sociétés',
-            'text'  => 'Entre agriculture, industrie et quotidien, la quantité d’eau a drastiquement diminué au cours de ces dernières années.',
+            'title' => 'L\'utilisation de l\'eau<br>dans nos sociétés',
+            'text'  => 'Entre agriculture, industrie et quotidien, la quantité<br>d’eau a drastiquement diminué au cours de ces dernières années.',
         ],
         'slides'    =>
         [
