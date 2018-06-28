@@ -56,7 +56,9 @@ export default function setSlider($container = document.querySelector('.barba-co
 
         $exploreButton.addEventListener('click', () =>
         {
+            $slides[transited].style.opacity = '0'
             transited = 1
+            $slides[transited].style.opacity = '1'
             $slider.style.transform = `translateY(${- transited * 100}vh)`
         })
     }
