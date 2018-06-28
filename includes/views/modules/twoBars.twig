@@ -1,24 +1,24 @@
 <div class="slide2-container1">
     <div class="slide2-bar1">
-        <div class="slide2-bar1-fill" data-fill"{{ chapter.slides.slide_2.bar_1.number }}"></div>
+        <div class="slide2-bar1-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_1.number }}"></div>
     </div>
     <div class="slide2-text-container">
-        <span class="slide2-subtitle">{{ chapter.slides.slide_2.bar_1.subtitle }}<br></span>
-        <span class="slide2-number">+ {{ chapter.slides.slide_2.bar_1.number }} %<br></span>
+        <span class="slide2-subtitle">{{ _slide.bar_1.subtitle }}<br></span>
+        <span class="slide2-number">+ {{ _slide.bar_1.number }} %<br></span>
     </div>
 </div>
 <div class="slide2-container2">
     <div class="slide2-bar2">
-        <div class="slide2-bar2-fill"></div>
+        <div class="slide2-bar2-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_2.number }}></div>
     </div>
     <div class="slide2-text-container">
-        <span class="slide2-subtitle">{{ chapter.slides.slide_2.bar_1.subtitle }}<br></span>
-        <span class="slide2-number">+ {{ chapter.slides.slide_2.bar_2.number }} %<br></span>
+        <span class="slide2-subtitle">{{ _slide.bar_2.subtitle }}<br></span>
+        <span class="slide2-number">+ {{ _slide.bar_2.number }} %<br></span>
     </div>
 </div>
 <div class="slide2-container3">
-    <div class="infos js-popup1">{{ chapter.slides.slide_2.popup_1.question }}</div>
-    <div class="infos2-text js-popup-text1">{{ chapter.slides.slide_2.popup_1.text | raw }}</div>
-    <div class="infos js-popup2">{{ chapter.slides.slide_2.popup_2.question }}</div>
-    <div class="infos2-text js-popup-text2">{{ chapter.slides.slide_2.popup_2.text | raw }}</div>
+    <div class="infos js-popup1">{{ _slide.popup_1.question }}</div>
+    <div class="infos2-text js-popup-text1">{{ _slide.popup_1.text | raw }}</div>
+    <div class="infos js-popup2">{{ _slide.popup_2.question }}</div>
+    <div class="infos2-text js-popup-text2">{{ _slide.popup_2.text | raw }}</div>
 </div>

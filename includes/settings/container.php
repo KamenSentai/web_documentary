@@ -144,13 +144,13 @@ $container['chapters'] = function($container)
                 'bar_1' =>
                 [
                     'subtitle' => 'REFROIDISSMENT RÉACTEURS',
-                    'number'   => '66 %',
+                    'number'   => '66',
                     'infos'    => 'de l’eau utilisée par le secteur industriel est pour le refroidissment des réacteurs',
                 ],
                 'bar_2' =>
                 [
                     'subtitle' => 'PRODUCTION ENERGIE',
-                    'number'   => '34 %',
+                    'number'   => '34',
                     'infos'    => 'de l’eau sert à la production d’énergie.',
                 ],
                 'popup_1' =>
@@ -286,6 +286,89 @@ $container['chapters'] = function($container)
         'paragraph' => 'Chaque minute, cinq personnes meurent dans le monde parce qu’elles n’ont pas accès à l’eau potable.',
         'section'   => 'Droit ou besoin',
         'slug'      => 'droit-ou-besoin',
+        'slides'    =>
+        [
+            'slide_1' =>
+            [
+                'type'  => 'motion',
+            ],
+            'slide_2' =>
+            [
+                'type'        => 'text',
+                'title'       => 'La ruée vers l\'or',
+                'label'       => 'UNE AFFOLANTE COURSE VERS L’EAU',
+                'text'        => 'Si aujourd’hui l’eau potable est abondante, et 70% des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à 50 ans, un bien plus précieux que le pétrole.',
+                'button'      => 'Quel avenir ?',
+                'description' => 'Si l’eau venait à devenir un actif financier, la spéculation sur les prix de l’eau potable pourrait être catastrophique pour les pays du tiers monde.<br>
+                Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment aucun surcoût pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait tuer des millions d’être humains sur la planète.<br>                 
+                Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
+            ],
+            'slide_3' =>
+            [
+                'type'        => 'audio',
+                'title'       => 'NESTLÉ, PRIVATISER L’EAU POUR MIEUX LA RÉPARTIR',
+                'text'        => '« We feed the world » - 2005 - Erwin Wagenhofer<br>
+                Interview du président de Nestlé, Peter Brabeck',
+                'button'      => 'EN SAVOIR PLUS',
+                'name'        => 'Nestlé',
+                'description' => 'Après l’énorme mouvement collectif d’indignation et de colère que provoqua cette déclaration. Nestlé publia bon nombre de communiqué de presse et M. Brabeck fit quelques autres sorties remarquées pour clarifier son point de vue. Pour Nestlé, comme pour les Nations Unies :<br>                
+                « Notre planète dispose de suffisamment d\'eau fraîche pour couvrir les besoins de 7 milliards de personnes, mais ces ressources sont inégalement réparties. Une quantité malheureusement trop importante d\'eau est gaspillée, polluée et utilisée de façon non durable. »<br>                
+                Nestlé souhaite privatiser l’eau dans le but de mieux la répartir, de manière triviale en empêchant les plus fortunés de remplir leurs piscines et les plus nécessiteux d’avoir accès à l’eau. Celle-ci devrait avoir une valeur en termes de taxation afin que chacun continue à l’utiliser de façon responsable.',
+            ],
+            'slide_4' =>
+            [
+                'type'        => 'text',
+                'title'       => 'CONFLITS MILITAIRES',
+                'label'       => '« EAU RAGE, EAU DÉSESPOIR »',
+                'text'        => 'L’accès à l’eau pourrait devenir l\'une des premières causes de tensions internationales. Plus de 40 % de la population mondiale est établie dans les 250 bassins fluviaux transfrontaliers du globe. Elles ont toutes l’obligation de partager leurs ressources en eau avec les habitants d\'un pays voisin.',
+            ],
+            'slide_5' =>
+            [
+                'type'         => 'text',
+                'title'        => 'CONFLITS MILITAIRES',
+                'label'        => '« EAU RAGE, EAU DÉSESPOIR »',
+                'text'         => 'Une telle situation peut être à l\'origine de conflits récurrents, notamment lorsqu’un cours d’eau traverse une frontière, car l\'eau devient alors un véritable instrument de pouvoir aux mains du pays situé en amont. Qu’il soit puissant ou non, celui-ci a toujours théoriquement l\'avantage, puisqu\'il a la maîtrise du débit de l\'eau.',
+                'button'       => 'HISTOIRE DE POUVOIR',
+                'description1' =>
+                [
+                    'name'        => 'SUIVRE LE NIL',
+                    'description' => 'L’Égypte, entièrement tributaire du Nil pour ses ressources en eau, doit néanmoins partager celles-ci avec dix autres États du bassin du Nil : notamment avec l\'Éthiopie où le Nil bleu prend sa source, et avec le Soudan où le fleuve serpente avant de déboucher sur le territoire égyptien.',
+                ],
+                'description2' =>
+                [
+                    'name'        => 'LA TURQUIE',
+                    'description' => 'Quant à l\'Irak et à la Syrie, ils sont tous deux à la merci de la Turquie, où les deux fleuves qui les alimentent, le Tigre et l\'Euphrate, prennent leur source. L\'eau de l\'Euphrate a d\'ailleurs souvent servi d\'arme brandie par la Turquie contre ses deux voisins : grâce aux nombreux barrages qu’elle a érigés sur le cours supérieur du fleuve et qui lui permettent d’en réguler à sa guise le débit en aval, la Turquie possède là, en effet, un puissant moyen de pression.',
+                ],
+                'button2'     => 'En savoir plus',
+                'name'        => 'Quel avenir ?',
+                'description' => 'Avec l’essor démographique et l’accroissement des besoins, ces tensions pourraient se multiplier à l’avenir. C’est ce que prédisent certains experts pour le XXIe siècle. D’autres en revanche pensent que la gestion commune de l\'eau peut être un facteur de pacification. Ils mettent en avant des exemples étonnants de coopération : le plus fameux est celui de l\'Inde et du Pakistan qui, au plus fort de la guerre qui les opposait dans les années 1960, n\'ont jamais interrompu le financement des travaux d\'aménagement qu\'ils menaient en commun sur le fleuve Indus.',
+            ],
+            'slide_6' => 
+            [
+                'type'      => 'threeBars',
+                'bar_1' =>
+                [
+                    'title'  => 'CROISSANCE',
+                    'ispourcentage' => false,
+                    'number' => '458 milliards',
+                    'text'   => 'd’euros de perte, voilà ce que représente la pénurie d’eau, soit 1% du PIB mondial.',
+                ],
+                'bar_2' =>
+                [
+                    'title'  => 'SANTÉ, DANGER',
+                    'ispourcentage' => false,
+                    'number' => '3,5 milliards',
+                    'text'   => 'de la population mondiale boivent une eau dangereuse pour leur santé.',
+                ],
+                'bar_3' =>
+                [
+                    'title'  => 'CONTAMINATION',
+                    'ispourcentage' => false,
+                    'number' => '1,8 milliards',
+                    'text'   => 'd’humains s’abreuvent à des points d’eau contaminés par les matières fécales, etc.',
+                ],
+            ],
+        ],
     ];
 
     $chapters = [$chapter_1, $chapter_2, $chapter_3, $chapter_4, $chapter_5];
