@@ -43,7 +43,7 @@ $container['chapters'] = function($container)
         [
             'number'    => 1,
             'title'     => 'Voyage au fil<br>de l\'eau',
-            'paragraph' => 'Chaque minute, cinq personnes meurent dans le monde parce qu’elles n’ont pas accès à l’eau potable.',
+            'paragraph' => 'L\'eau qui coule de nos robinets semble infinie mais cette ressource naturelle se transforme peu à peu en valeur marchande.',
             'section'   => 'États des lieux',
             'slug'      => 'introduction',
             'slides'    =>
