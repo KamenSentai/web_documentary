@@ -281,7 +281,7 @@ gulp.task('watch', () =>
 	// Run browser
 	browserSync.init(
 		{
-			browser : 'Chrome',
+			browser : 'Google Chrome',
 			proxy   : `http://localhost/${path.project}`
 		}
 	)
