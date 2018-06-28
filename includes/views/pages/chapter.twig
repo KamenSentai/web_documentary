@@ -33,15 +33,24 @@
                                 <span class="chapter-explore-text">Explorer</span>
                             </div>
                         </section>
-                        <section class="slide">
-                            <div class="area"></div>
-                        </section>
-                        <section class="slide">
-                            <div class="area"></div>
-                        </section>
-                        <section class="slide">
-                            <div class="area"></div>
-                        </section>
+                        {% for _slide in chapter.slides %}
+                            <section class="slide">
+                                <div class="area {{ _slide.type }}">
+                                    {% if _slide.type == 'motion' %}
+                                        {% include './layouts/sectionMotion.twig' %}
+                                    {% endif %}
+                                    {% if _slide.type == 'three-bars' %}
+                                        {% include './layouts/sectionThreeBars.twig' %}
+                                    {% endif %}
+                                    {% if _slide.type == 'three-circles' %}
+                                        {% include './layouts/sectionCircle.twig' %}
+                                    {% endif %}
+                                    {% if _slide.type == 'two-bars' %}
+                                        {% include './layouts/sectionTwoBars.twig' %}
+                                    {% endif %}
+                                </div>
+                            </section>
+                        {% endfor %}
                     </div>
                     <div class="chapter-medias-button">
                         {% include './layouts/lock.twig' %}

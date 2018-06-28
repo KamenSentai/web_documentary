@@ -46,13 +46,13 @@ $container['chapters'] = function($container)
             'paragraph' => 'L\'eau qui coule de nos robinets semble infinie mais cette ressource naturelle se transforme peu à peu en valeur marchande.',
             'section'   => 'États des lieux',
             'slug'      => 'introduction',
-            'slides'    =>
-            [
-                'header' =>
+            'header' =>
                 [
                     'title'     => 'La quantité d\'eau<br>à la surface de la Terre',
                     'text'      => 'L’eau qui coule de nos robinets semble infinie mais cette ressource naturelle se transforme peu à peu en valeur marchande.',
                 ],
+            'slides'    =>
+            [
                 '1'      => 
                 [
                     'type'      => 'motion',
@@ -68,7 +68,7 @@ $container['chapters'] = function($container)
                     'subtitle3' => 'Course contre la montre',
                     'number3'   => '5 Humains',
                     'text3'     => 'meurent toutes les minutes parce qu’ils n’ont pas accès à l’eau potable.',
-                    'type'      => '3 barres',
+                    'type'      => 'three-bars',
                 ],
             ],
         ],
@@ -78,13 +78,13 @@ $container['chapters'] = function($container)
             'paragraph' => 'Chaque minute, cinq personnes meurent dans le monde parce qu’elles n’ont pas accès à l’eau potable.',
             'section'   => 'Utilisation de l\'eau',
             'slug'      => 'utilisation',
+            'header' =>
+            [
+                'title'     => 'L\'utilisation de l\'eau<br>Dans nos sociétés',
+                'text'      => 'Entre agriculture, industrie et quotidien, la quantité d’eau a drastiquement diminué au cours de ces dernières années.',
+            ],
             'slides'    =>
             [
-                'header' =>
-                [
-                    'title'     => 'L\'utilisation de l\'eau<br>Dans nos sociétés',
-                    'text'      => 'Entre agriculture, industrie et quotidien, la quantité d’eau a drastiquement diminué au cours de ces dernières années.',
-                ],
                 '1'      =>
                 [
                     'number1'   => '70 %',
@@ -93,7 +93,7 @@ $container['chapters'] = function($container)
                     'text2'     => 'Industries',
                     'number3'   => '10 %',
                     'text3'     => 'Humains',
-                    'type'      => '3 cercles',
+                    'type'      => 'three-circles',
                 ],
                 '2'      =>
                 [
@@ -106,7 +106,7 @@ $container['chapters'] = function($container)
                     L’irrigation rend ces cultures économiquement intéressantes, et a pour effet de favoriser l’augmentation des rendements.',
                     'question2' => 'Quelles conséquences ?',
                     'text2'     => 'Il y a des conséquences importantes sur la <span class="text-bold">pollution</span> des eaux des nappes et des rivières avec de fortes concentrations en <span class="text-bold">azote</span> et en <span class="text-bold">molécules</span> issues des produits phytosanitaires, ainsi qu’en phosphore dans certaines zones.',
-                    'type'      => '2 barres + pop-ups',  
+                    'type'      => 'two-bars',  
                 ],
                 '3'      =>
                 [
@@ -122,7 +122,7 @@ $container['chapters'] = function($container)
                     Depuis, tous les cours d’eau du pays sont <span class="text-bold">accaparés</span> forçant les populations à se déplacer.',
                     'question2' => 'AU MEXIQUE',
                     'text2'     => 'Le géant américain, <span class="text-bold">Coca-Cola</span> engloutit <span class="text-bold">100 millions</span> de litres par an. Alors que <span class="text-bold">12 millions</span> d’habitants n’ont pas accès à l’eau potable dans ce même pays.',
-                    'type'      => '2 barres + pop-ups',  
+                    'type'      => 'two-bars',  
                 ],
                 '4'      =>
                 [
@@ -147,7 +147,7 @@ $container['chapters'] = function($container)
                     'reponse3B' => '12 655 L',
                     'title'     => 'Chapite 3',
                     'text'      => 'La gestion de l\'eau',
-                    'type'      => '5 circles + questions',
+                    'type'      => 'five-circles',
                 ],
             ],
         ],
@@ -161,7 +161,7 @@ $container['chapters'] = function($container)
             [
                 '1'      =>
                 [
-                    'type'      => 'Video',
+                    'type'      => 'video',
                 ],
                 '2'      =>
                 [
@@ -186,7 +186,7 @@ $container['chapters'] = function($container)
                     'name3'        => 'ANNE LE STRAT',
                     'description3' => 'D\'après Anne Le Strat, adjointe PS à la mairie de Paris chargée de l\'eau :<br> 
                     “Quand on regarde la carte de France de plus près, on voit que certaines villes de gauche ont décidé de rester délégataires tandis que des villes de droite ont cassé leur contrat pour passer en régie. Il faut donc se garder de tout raisonnement simpliste selon lequel les municipalités de gauche seraient plus favorables à une gestion publique que celles de droite.”',
-                    'type'         => 'photos + texte',
+                    'type'         => 'photos',
                 ],
                 '4'      =>
                 [
