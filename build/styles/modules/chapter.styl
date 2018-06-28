@@ -1,24 +1,54 @@
-.chapter-header
+header
     position absolute
-    left 2.5rem
-    top 2.5rem
+    left 0
+    top 0
+    width 100%
+    height 20vh
     font-family PNL
     text-transform uppercase
-    a
-        position relative
-        &::after
-            content ''
-            position absolute
-            left 0
-            top 112.5%
-            width 100%
-            height 0.0625rem
-            background-color #fff
-            transform-origin 0 0
-            transform scaleX(0)
-            composite(transform, 0.5s, ease-out)
-        &:hover::after
-            transform none
+    z-index 5
+    .chapter-nav
+        position absolute
+        left 3rem
+        top 3rem
+        z-index 3
+        a
+            position relative
+            &::after
+                content ''
+                position absolute
+                left 0
+                top 112.5%
+                width 100%
+                height 0.0625rem
+                background-color #fff
+                transform-origin 0 0
+                transform scaleX(0)
+                composite(transform, 0.5s, ease-out)
+            &:hover::after
+                transform none
+    .chapter-numberhead
+        display flex
+        flex-direction column
+        position absolute
+        left 50%
+        top 3rem
+        width 100%
+        height calc(100% - 3rem)
+        transform translateX(-50%)
+        text-align center
+        z-index 2
+        .text
+            margin 0 auto
+        .number
+            margin auto
+            font-family PNR
+            font-size 3em
+        .border
+            margin auto auto 0 auto
+            width 12.5vw
+            height 0.25rem
+            background-color $blue
 
 .chapter-title
     center()
@@ -70,7 +100,7 @@
             transform translateX(-50%)
             opacity 1
     .chapter-explore-svg
-        size(4.5vw, auto)
+        size(2.5rem, auto)
         rect
             transform translateY(0)
             will-change transform
@@ -102,7 +132,7 @@
             transform translateX(-50%)
             opacity 1
     .chapter-medias-svg
-        size(4.5vw, auto)
+        size(2.5rem, auto)
         g
             transform translateY(0)
             will-change transform

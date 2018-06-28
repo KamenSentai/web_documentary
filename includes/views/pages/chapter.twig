@@ -10,11 +10,18 @@
         {% block body %}
             <div id="barba-wrapper">
                 <div class="barba-container">
+                    <header>
+                        <h2 class="chapter-nav" data-baseurl="{{ base_url() }}/">
+                            <a class="home" href="{{ path_for('home') }}" title="L'or bleu">L'or bleu</a> &#62; <a class="chapters" href="{{ path_for('chapters') }}" title="Explorer">Explorer</a>
+                        </h2>
+                        <div class="chapter-numberhead">
+                            <span class="text">Chapitre</span>
+                            <span class="number">{{ chapter.number }}</span>
+                            <div class="border"></div>
+                        </div>
+                    </header>
                     <div class="slider">
                         <section class="slide">
-                            <h2 class="chapter-header" data-baseurl="{{ base_url() }}/">
-                                <a class="home" href="{{ path_for('home') }}" title="L'or bleu">L'or bleu</a> &#62; <a class="chapters" href="{{ path_for('chapters') }}" title="Explorer">Explorer</a> &#62; Chapitre {{ chapter.number }}
-                            </h2>
                             <div class="chapter-number-container">
                                 <span class="chapter-number">{{ chapter.number }}</span>
                                 <div class="chapter-line"></div>
@@ -26,9 +33,15 @@
                                 <span class="chapter-explore-text">Explorer</span>
                             </div>
                         </section>
-                        <section class="slide">1</section>
-                        <section class="slide">2</section>
-                        <section class="slide">3</section>
+                        <section class="slide">
+                            <div class="area"></div>
+                        </section>
+                        <section class="slide">
+                            <div class="area"></div>
+                        </section>
+                        <section class="slide">
+                            <div class="area"></div>
+                        </section>
                     </div>
                     <div class="chapter-medias-button">
                         {% include './layouts/lock.twig' %}

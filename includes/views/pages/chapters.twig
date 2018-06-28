@@ -10,7 +10,9 @@
         {% block body %}
             <div id="barba-wrapper">
                 <div class="barba-container">      
-                    <h1 class="chapters-title" data-baseurl="{{ base_url() }}/"><a href="{{ base_url() }}/" title="L'or bleu">L'or bleu</a> &#62; Explorer</h1>
+                    <h1 class="chapters-nav" data-baseurl="{{ base_url() }}/">
+                        <a href="{{ base_url() }}/" title="L'or bleu">L'or bleu</a>
+                    </h1>
                     {% for _chapter in chapters %}
                         <span class="chapters--button">
                             <a href="{{ path_for('chapter', {slug: _chapter.slug}) }}" class="chapters--target">

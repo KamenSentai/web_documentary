@@ -4,7 +4,7 @@ export default function setSlider($container = document.querySelector('.barba-co
 
     if ($slider)
     {
-        const $slides = $slider.querySelectorAll('.slide')
+        const $slides = Array.from($slider.querySelectorAll('.slide'))
         const $exploreButton = $slider.querySelector('.chapter-explore-button')
 
         const isFirefox = (/Firefox/i.test(navigator.userAgent))
@@ -37,12 +37,15 @@ export default function setSlider($container = document.querySelector('.barba-co
             {
                 isScrolled = true
 
+                $slides[transited].style.opacity = '0'
+
                 if (deltaScroll > 0)
                     transited = Math.min(transited + 1, $slides.length - 1)
                 else if (deltaScroll < 0)
                     transited = Math.max(transited - 1, 0)
 
-                $slider.style.transform = `translateY(${- transited * window.innerHeight}px)`
+                $slides[transited].style.opacity = '1'
+                $slider.style.transform = `translateY(${- transited * 100}vh)`
 
                 setTimeout(() =>
                 {
@@ -54,7 +57,7 @@ export default function setSlider($container = document.querySelector('.barba-co
         $exploreButton.addEventListener('click', () =>
         {
             transited = 1
-            $slider.style.transform = `translateY(${- transited * window.innerHeight}px)`
+            $slider.style.transform = `translateY(${- transited * 100}vh)`
         })
     }
 }
