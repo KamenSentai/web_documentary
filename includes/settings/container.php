@@ -295,7 +295,7 @@ $container['chapters'] = function($container)
             'slide_2' =>
             [
                 'type'        => 'text',
-                'title'       => 'La ruée vers l\'or',
+                'title'       => 'La ruee vers l\'or',
                 'label'       => 'UNE AFFOLANTE COURSE VERS L’EAU',
                 'text'        => 'Si aujourd’hui l’eau potable est abondante, et 70% des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à 50 ans, un bien plus précieux que le pétrole.',
                 'button'      => 'Quel avenir ?',
