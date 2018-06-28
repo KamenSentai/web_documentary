@@ -36,7 +36,7 @@
                         {% for _slide in chapter.slides %}
                             <section class="slide">
                                 <div class="area {{ _slide.type }}">
-                                    {% include './modules/' ~ _slide.type  ~ '.twig' %}
+                                    {% include './modules/' ~ _slide.type  ~ '.twig' with {_slide: _slide} %}
                                 </div>
                             </section>
                         {% endfor %}

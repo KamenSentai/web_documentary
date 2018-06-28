@@ -1,6 +1,6 @@
 <div class="slide1-container1">
     <div class="slide1-bar1">
-        <div class="slide1-bar1-fill"></div>
+        <div class="slide1-bar1-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_1.number }}></div>
     </div>
     <div class="slide1-text-container">
         <span class="slide1-subtitle">{{ chapter.slides.slide_2.bar_1.title }}<br></span>
@@ -9,7 +9,7 @@
 </div>
 <div class="slide1-container2">
     <div class="slide1-bar2">
-        <div class="slide1-bar2-fill"></div>
+        <div class="slide1-bar2-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_2.number }}></div>
     </div>
     <div class="slide1-text-container">
         <span class="slide1-subtitle">{{ chapter.slides.slide_2.bar_2.title }}<br></span>
