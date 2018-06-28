@@ -72,16 +72,22 @@ export default function setSlider($container = document.querySelector('.barba-co
         {
             switch (event.keyCode) {
                 case 38:
-                    $slides[transited].style.opacity = '0'
-                    transited = Math.max(transited - 1, 0)
-                    $slider.style.transform = `translateY(${- transited * 100}vh)`
-                    transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                    if (transited > 0)
+                    {
+                        $slides[transited--].style.opacity = '0'
+                        $slider.style.transform = `translateY(${- transited * 100}vh)`
+                        $slides[transited].style.opacity = '1'
+                        transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                    }
                     break
                 case 40:
-                    $slides[transited].style.opacity = '0'
-                    transited = Math.min(transited + 1, $slides.length - 1)
-                    $slider.style.transform = `translateY(${- transited * 100}vh)`
-                    transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                    if (transited < $slides.length - 1)
+                    {
+                        $slides[transited++].style.opacity = '0'
+                        $slider.style.transform = `translateY(${- transited * 100}vh)`
+                        $slides[transited].style.opacity = '1'
+                        transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                    }
                     break
             }
         })
