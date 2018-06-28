@@ -2,11 +2,13 @@ import setMenu from './menu'
 import setMedias from './medias'
 import setSlider from './slider'
 import setPopup from './popup'
+import setSideBarWave from './wave'
 
 setMenu()
 setMedias()
 setSlider()
 setPopup()
+setSideBarWave()
 const $links = document.querySelectorAll('a')
 
 for (const $link of $links)
@@ -39,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () =>
                 setMedias(this.newContainer)
                 setSlider(this.newContainer)
                 setPopup(this.newContainer)
+                setSideBarWave(this.newContainer)
                 const $links = this.newContainer.querySelectorAll('a')
 
                 for (const $link of $links)
