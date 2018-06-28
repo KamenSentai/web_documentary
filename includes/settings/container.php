@@ -242,28 +242,28 @@ $container['chapters'] = function($container)
                 'type'  => 'text',
                 'title' => 'FLUCTUACT NEC MERGITUR',
                 'label' => '« il est battu par les flots mais ne sombre pas »',
-                'text'  => 'Aujourd\'hui, la mairie de Paris affiche comme un succès le fait d\'avoir fait baisser le prix du mètre cube d\'eau. En revanche et en parallèle de cette baisse, les Parisiens ont pu constater une réelle augmentation de leurs impôts locaux.',
+                'text'  => 'Aujourd\'hui, la mairie de <span class="text-bold">Paris</span> affiche comme un succès le fait d\'avoir fait baisser le prix du mètre cube d\'eau. En revanche et en parallèle de cette baisse, les Parisiens ont pu constater une réelle <span class="text-bold">augmentation</span> de leurs impôts locaux.',
             ],
             'slide_3' =>
             [
                 'type'        => 'character',
                 'button'      => 'LE VOYAGE POLITIQUE<br>DE L\'EAU',
                 'title'       => 'L\'EAU ET<br>LES IMPÔTS',
-                'text'        => 'En 2009, les parisiens ont connu une hausse en moyenne de 11,7% ( 395 euros en moyenne) pour la taxe d\'habitation et de 47% ( 552 euros en moyenne ) pour la taxe foncière. Dire que le passage de Paris en régie publique est la seule conséquence de l\'augmentation des impôts serait un raccourci trop facile, néanmoins le lien paraît évident.<br>En réalité, le coût dépend surtout de la facilité d\'accès aux points d\'approvisionnement en eau et de la qualité de cette eau. C\'est pour cette raison que les prix peuvent varier de 2,50 à 15€ le mètre cube rien qu\'en France.<br>Ce choix est également très politique, et il en va de la réappropriation du service public pour certains.',
+                'text'        => 'En 2009, les parisiens ont connu une hausse en moyenne de <span class="text-bold">11,7%</span> ( 395 euros en moyenne) pour la taxe d\'habitation et de <span class="text-bold">47%</span> ( 552 euros en moyenne ) pour la taxe foncière. Dire que le passage de Paris en <span class="text-bold">régie publique</span> est la seule conséquence de l\'augmentation des impôts serait un raccourci trop facile, néanmoins le lien paraît évident.<br>En réalité, le coût dépend surtout de la <span class="text-bold">facilité d\'accès</span> aux points d\'approvisionnement en eau et de la <span class="text-bold">qualité</span> de cette eau. C\'est pour cette raison que les prix peuvent varier de 2,50 à 15€ le mètre cube rien qu\'en France.<br>Ce choix est également très politique, et il en va de la <span class="text-bold">réappropriation</span> du service public pour certains.',
                 'character_1' =>
                 [
                     'name'        => 'PIERRE MOSCOVICI',
-                    'description' => 'Président de l\'agglomération du Pays de Montbéliard, il avait annoncé en 2010 le retour en régie de la gestion de l\'eau d\'ici 2015… alors que le contrat courait jusqu\'en 2022, n\'en déplaise à Veolia.<br>Certains estiment que se prononcer en faveur de la gestion en régie, et donc contre la mainmise des groupes privés, reste une manœuvre électoraliste efficace pour apaiser les ardeurs des Verts et redorer son blason socialiste. Pourtant, si le combat semble plus porté par la gauche, la gestion est une question qui dépasse bel et bien le clivage politique droite-gauche.',
+                    'description' => 'Président de l\'agglomération du Pays de Montbéliard, il avait annoncé en <span class="text-bold">2010</span> le retour en régie de la gestion de l\'eau d\'ici 2015… alors que le contrat courait jusqu\'en <span class="text-bold">2022</span>, n\'en déplaise à Veolia.<br>Certains estiment que se prononcer en faveur de la gestion en régie, et donc contre la mainmise des groupes privés, reste une <span class="text-bold">manoeuvre électoraliste</span> efficace pour apaiser les ardeurs des Verts et redorer son blason socialiste. Pourtant, si le combat semble plus porté par la gauche, la gestion est une question qui dépasse bel et bien le clivage politique droite-gauche.',
                 ],
                 'character_2' =>
                 [
-                    'name'        => 'BERNARD DELANÖE',
-                    'description' => 'Bertrand Delanoë en avait fait son cheval de bataille pour sa réélection à la Mairie de Paris en 2008. En réaffirmant, ce besoin de la puissance des collectivités locales face aux entreprises privées, motivé par un attachement certain au service public.<br>Olivier Galiana, directeur du cabinet de la communauté d\'agglomération d\'Evry le disait : "La distribution d\'eau sera gérée par une régie publique et non plus par Suez car nous visons à nous réapproprier le service public de proximité.”',
+                    'name'        => 'BERTRAND DELANÖE',
+                    'description' => 'Bertrand Delanoë en avait fait son cheval de bataille pour sa réélection à la Mairie de Paris en 2008. En réaffirmant, ce besoin de la puissance des collectivités locales face aux entreprises privées, motivé par un attachement certain au service public.<br><span class="text-bold">Olivier Galiana</span>, directeur du cabinet de la communauté d\'agglomération d\'Evry le disait : "La distribution d\'eau sera gérée par une régie publique et non plus par Suez car nous visons à nous réapproprier le service public de proximité.”',
                 ],
                 'character_3' =>
                 [
                     'name'        => 'ANNE LE STRAT',
-                    'description' => 'D\'après Anne Le Strat, adjointe PS à la mairie de Paris chargée de l\'eau :<br>"Quand on regarde la carte de France de plus près, on voit que certaines villes de gauche ont décidé de rester délégataires tandis que des villes de droite ont cassé leur contrat pour passer en régie. Il faut donc se garder de tout raisonnement simpliste selon lequel les municipalités de gauche seraient plus favorables à une gestion publique que celles de droite.”',
+                    'description' => 'D\'après Anne Le Strat, adjointe PS à la mairie de Paris <span class="text-bold">chargée de l\'eau</span> :<br>"Quand on regarde la carte de France de plus près, on voit que certaines villes de gauche ont décidé de rester délégataires tandis que des villes de droite ont cassé leur contrat pour passer en régie. Il faut donc se garder de tout raisonnement simpliste selon lequel les municipalités de gauche seraient plus favorables à une gestion publique que celles de droite.”',
                 ],
             ],
             'slide_4' =>
@@ -312,10 +312,10 @@ $container['chapters'] = function($container)
                 'type'        => 'text',
                 'title'       => 'La ruee vers l\'or',
                 'label'       => 'UNE AFFOLANTE COURSE VERS L\'EAU',
-                'text'        => 'Si aujourd\'hui l\'eau potable est abondante, et 70% des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à 50 ans, un bien plus précieux que le pétrole.',
+                'text'        => 'Si aujourd\'hui l\'eau potable est abondante, et <span class="text-bold">70%</span> des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à <span class="text-bold">50 ans</span>, un bien plus précieux que le pétrole.',
                 'button'      => 'Quel avenir ?',
-                'description' => 'Si l’eau venait à devenir un actif financier, la spéculation sur les prix de l’eau potable pourrait être catastrophique pour les pays du tiers monde.<br><br>
-                Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment aucun surcoût pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait tuer des millions d’être humains sur la planète.<br><br>
+                'description' => 'Si l’eau venait à devenir un <span class="text-bold">actif financier</span>, la spéculation sur les prix de l’eau potable pourrait être <span class="text-bold">catastrophique</span> pour les pays du tiers monde.<br><br>
+                Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment <span class="text-bold">aucun surcoût</span> pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait <span class="text-bold">tuer</span> des millions d’êtres humains sur la planète.<br><br>
                 Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
             ],
             'slide_3' =>
@@ -326,33 +326,33 @@ $container['chapters'] = function($container)
                 Interview du président de Nestlé, Peter Brabeck',
                 'button'      => 'EN SAVOIR PLUS',
                 'name'        => 'Nestlé',
-                'description' => 'Après l\'énorme mouvement collectif d\'indignation et de colère que provoqua cette déclaration. Nestlé publia bon nombre de communiqué de presse et M. Brabeck fit quelques autres sorties remarquées pour clarifier son point de vue. Pour Nestlé, comme pour les Nations Unies :<br>                
+                'description' => 'Après l\'énorme mouvement collectif d\'<span class="text-bold">indignation</span> et de colère que provoqua cette déclaration. Nestlé publia bon nombre de communiqué de presse et M. Brabeck fit quelques autres sorties remarquées pour clarifier son point de vue. Pour Nestlé, comme pour les <span class="text-bold">Nations Unies</span> :<br>                
                 « Notre planète dispose de suffisamment d\'eau fraîche pour couvrir les besoins de 7 milliards de personnes, mais ces ressources sont inégalement réparties. Une quantité malheureusement trop importante d\'eau est gaspillée, polluée et utilisée de façon non durable. »<br>                
-                Nestlé souhaite privatiser l\'eau dans le but de mieux la répartir, de manière triviale en empêchant les plus fortunés de remplir leurs piscines et les plus nécessiteux d\'avoir accès à l\'eau. Celle-ci devrait avoir une valeur en termes de taxation afin que chacun continue à l\'utiliser de façon responsable.',
+                Nestlé souhaite <span class="text-bold">privatiser</span> l\'eau dans le but de mieux la répartir, de manière triviale en empêchant les plus fortunés de remplir leurs piscines et les plus nécessiteux d\'avoir accès à l\'eau. Celle-ci devrait avoir une valeur en termes de <span class="text-bold">taxation</span> afin que chacun continue à l\'utiliser de façon responsable.',
             ],
             'slide_4' =>
             [
                 'type'        => 'text',
                 'title'       => 'CONFLITS MILITAIRES',
                 'label'       => '« EAU RAGE, EAU DÉSESPOIR »',
-                'text'        => 'L\'accès à l\'eau pourrait devenir l\'une des premières causes de tensions internationales. Plus de 40 % de la population mondiale est établie dans les 250 bassins fluviaux transfrontaliers du globe. Elles ont toutes l\'obligation de partager leurs ressources en eau avec les habitants d\'un pays voisin.',
+                'text'        => 'L\'accès à l\'eau pourrait devenir l\'une des premières causes de <span class="text-bold">tensions internationales</span>. Plus de 40 % de la population mondiale est établie dans les <span class="text-bold">250 bassins</span> fluviaux transfrontaliers du globe. Elles ont toutes l\'obligation de partager leurs ressources en eau avec les habitants d\'un pays voisin.',
             ],
             'slide_5' =>
             [
                 'type'         => 'text',
                 'title'        => 'CONFLITS MILITAIRES',
                 'label'        => '« EAU RAGE, EAU DÉSESPOIR »',
-                'text'         => 'Une telle situation peut être à l\'origine de conflits récurrents, notamment lorsqu\'un cours d\'eau traverse une frontière, car l\'eau devient alors un véritable instrument de pouvoir aux mains du pays situé en amont. Qu\'il soit puissant ou non, celui-ci a toujours théoriquement l\'avantage, puisqu\'il a la maîtrise du débit de l\'eau.',
+                'text'         => 'Une telle situation peut être à l\'origine de <span class="text-bold">conflits</span> récurrents, notamment lorsqu\'un cours d\'eau traverse une frontière, car l\'eau devient alors un véritable <span class="text-bold">instrument de pouvoir</span> aux mains du pays situé en amont. Qu\'il soit puissant ou non, celui-ci a toujours théoriquement l\'avantage, puisqu\'il a la maîtrise du débit de l\'eau.',
                 'button'       => 'HISTOIRE DE POUVOIR',
                 'description1' =>
                 [
                     'name'        => 'SUIVRE LE NIL',
-                    'description' => 'L\'Égypte, entièrement tributaire du Nil pour ses ressources en eau, doit néanmoins partager celles-ci avec dix autres États du bassin du Nil : notamment avec l\'Éthiopie où le Nil bleu prend sa source, et avec le Soudan où le fleuve serpente avant de déboucher sur le territoire égyptien.',
+                    'description' => 'L\'Égypte, entièrement tributaire du Nil pour ses ressources en eau, doit néanmoins partager celles-ci avec <span class="text-bold">10</span> autres États du bassin du Nil : notamment avec l\'<span class="text-bold">Ethipie</span> où le Nil bleu prend sa source, et avec le <span class="text-bold">Soudan</span> où le fleuve serpente avant de déboucher sur le territoire égyptien.',
                 ],
                 'description2' =>
                 [
                     'name'        => 'LA TURQUIE',
-                    'description' => 'Quant à l\'Irak et à la Syrie, ils sont tous deux à la merci de la Turquie, où les deux fleuves qui les alimentent, le Tigre et l\'Euphrate, prennent leur source. L\'eau de l\'Euphrate a d\'ailleurs souvent servi d\'arme brandie par la Turquie contre ses deux voisins : grâce aux nombreux barrages qu\'elle a érigés sur le cours supérieur du fleuve et qui lui permettent d\'en réguler à sa guise le débit en aval, la Turquie possède là, en effet, un puissant moyen de pression.',
+                    'description' => 'Quant à l\'<span class="text-bold">Irak</span> et à la <span class="text-bold">Syrie</span>, ils sont tous deux à la merci de la <span class="text-bold">Turquie</span>, où les deux fleuves qui les alimentent, le Tigre et l\'Euphrate, prennent leur source. L\'eau de l\'Euphrate a d\'ailleurs souvent servi d\'arme brandie par la Turquie contre ses deux voisins : grâce aux nombreux barrages qu\'elle a érigés sur le cours supérieur du fleuve et qui lui permettent d\'en réguler à sa guise le débit en aval, la Turquie possède là, en effet, un puissant moyen de pression.',
                 ],
                 'button2'     => 'En savoir plus',
                 'name'        => 'Quel avenir ?',
@@ -384,8 +384,8 @@ $container['chapters'] = function($container)
                 ],
                 'button'      => 'EN SAVOIR PLUS',
                 'name'        => 'EAU, INFINI ESPOIR',
-                'description' => 'Alors que se profile une pénurie mondiale, la question de la gestion de l’eau n’est presque pas posée. Nous n’avons toujours pas su définir ce que l’eau était pour l’homme en termes de droit international, nous n’avons pas réglé le problème de répartition de l’eau dans le monde, ains que celui du problème de la qualité de l’eau dans le monde.<br>
-                L’eau, illusion parfaite d’une ressource infinie, est aujourd’hui le dernier de nos soucis. Par manque de vision à long-terme et de prévoyance, il pourrait bien devenir le premier très rapidement, et ainsi s’ajouter à la longue liste de ce que la civilisation humaine aurait pu éviter.',
+                'description' => 'Alors que se profile une <span class="text-bold">pénurie</span> mondiale, la question de la gestion de l’eau n’est presque pas posée. Nous n’avons toujours pas su définir ce que l’eau était pour l’homme en termes de <span class="text-bold">droit international</span>, nous n’avons pas réglé le problème de <span class="text-bold">répartition</span> de l’eau dans le monde, ains que celui du problème de la <span class="text-bold">qualité</span> de l’eau dans le monde.<br>
+                L’eau, <span class="text-bold">illusion</span> parfaite d’une ressource infinie, est aujourd’hui le dernier de nos soucis. Par manque de vision à long-terme et de prévoyance, il pourrait bien devenir le premier très rapidement, et ainsi s’ajouter à la longue liste de ce que la civilisation humaine aurait pu éviter.',
             ],
         ],
     ];
