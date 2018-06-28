@@ -49,6 +49,10 @@ export default function setSlider($container = document.querySelector('.barba-co
     
                     $slides[transited].style.opacity = '1'
                     $slider.style.transform = `translateY(${- transited * 100}vh)`
+                    if ($slides[transited].querySelector('.threeCircles'))
+                    {
+                        $slides[transited].querySelector('.threeCircles').querySelector('.chart-1').classList.add('animate')
+                    }
                     transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
     
                     setTimeout(() =>
@@ -65,6 +69,10 @@ export default function setSlider($container = document.querySelector('.barba-co
             transited = 1
             $slides[transited].style.opacity = '1'
             $slider.style.transform = `translateY(${- transited * 100}vh)`
+            if ($slides[transited].querySelector('.threeCircles'))
+            {
+                $slides[transited].querySelector('.threeCircles').querySelector('.chart-1').classList.add('animate')
+            }
             transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
         })
 
@@ -72,13 +80,18 @@ export default function setSlider($container = document.querySelector('.barba-co
         {
             if (!$container.querySelector('.chapter-about-container').classList.contains('active'))
             {
-                switch (event.keyCode) {
+                switch (event.keyCode)
+                {
                     case 38:
                         if (transited > 0)
                         {
                             $slides[transited--].style.opacity = '0'
                             $slider.style.transform = `translateY(${- transited * 100}vh)`
                             $slides[transited].style.opacity = '1'
+                            if ($slides[transited].querySelector('.threeCircles'))
+                            {
+                                $slides[transited].querySelector('.threeCircles').querySelector('.chart-1').classList.add('animate')
+                            }
                             transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
                         }
                         break
@@ -88,11 +101,42 @@ export default function setSlider($container = document.querySelector('.barba-co
                             $slides[transited++].style.opacity = '0'
                             $slider.style.transform = `translateY(${- transited * 100}vh)`
                             $slides[transited].style.opacity = '1'
+                            if ($slides[transited].querySelector('.threeCircles'))
+                            {
+                                $slides[transited].querySelector('.threeCircles').querySelector('.chart-1').classList.add('animate')
+                            }
                             transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
                         }
                         break
                 }
             }
         })
+
+        const $threeCircles = $container.querySelector('.threeCircles')
+        
+        if ($threeCircles)
+        {
+            let slided = 0
+            const $containersCircle = $threeCircles.querySelectorAll('.container-circle')
+            for (const $containerCircle of $containersCircle)
+            {
+                const $prev = $containerCircle.querySelector('.prev')
+                const $next = $containerCircle.querySelector('.next')
+
+                $prev.addEventListener('click', () =>
+                {
+                    slided -= 1
+                    $threeCircles.style.transform = `translateX(-${slided * 100}vw)`
+                    $threeCircles.querySelector(`.chart-${slided + 1}`).classList.add('animate')
+                })
+
+                $next.addEventListener('click', () =>
+                {
+                    slided += 1
+                    $threeCircles.style.transform = `translateX(-${slided * 100}vw)`
+                    $threeCircles.querySelector(`.chart-${slided + 1}`).classList.add('animate')
+                })
+            }
+        }
     }
 }
