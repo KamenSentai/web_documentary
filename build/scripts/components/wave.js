@@ -7,7 +7,7 @@ export default function setSideBarWave($container = document.querySelector('.bar
     if ($sideBarWave)
     {
         (function() {
-            let $path = document.querySelector('.sideBarWave path')
+            let $path = $container.querySelector('.sideBarWave path')
             let $from = $path.getAttribute('d')
             let $to = $path.dataset['to']
 
@@ -17,13 +17,8 @@ export default function setSideBarWave($container = document.querySelector('.bar
                 friction: 315
         }
 
-            console.log("$From : " +$from)
-            console.log("$To : " +$to)
-            console.log("Dynamics : " +dynamics)
-            console.log($path)
-
-            let close = document.querySelector('.about-close-button')
-            let open = document.querySelector('.chapter-medias-button')
+            let close = $container.querySelector('.about-close-button')
+            let open = $container.querySelector('.chapter-medias-button')
 
             open.addEventListener('click', function (e) {
                 e.stopPropagation()
