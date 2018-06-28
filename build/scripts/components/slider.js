@@ -6,6 +6,7 @@ export default function setSlider($container = document.querySelector('.barba-co
     {
         const $slides = Array.from($slider.querySelectorAll('.slide'))
         const $exploreButton = $slider.querySelector('.chapter-explore-button')
+        const $header = $container.querySelector('header')
 
         const isFirefox = (/Firefox/i.test(navigator.userAgent))
         const mouseWheelEvent = !isFirefox ? 'mousewheel' : 'DOMMouseScroll'
@@ -48,6 +49,7 @@ export default function setSlider($container = document.querySelector('.barba-co
     
                     $slides[transited].style.opacity = '1'
                     $slider.style.transform = `translateY(${- transited * 100}vh)`
+                    transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
     
                     setTimeout(() =>
                     {
@@ -63,6 +65,31 @@ export default function setSlider($container = document.querySelector('.barba-co
             transited = 1
             $slides[transited].style.opacity = '1'
             $slider.style.transform = `translateY(${- transited * 100}vh)`
+            transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+        })
+
+        window.addEventListener('keydown', event =>
+        {
+            switch (event.keyCode) {
+                case 38:
+                    if (transited > 0)
+                    {
+                        $slides[transited--].style.opacity = '0'
+                        $slider.style.transform = `translateY(${- transited * 100}vh)`
+                        $slides[transited].style.opacity = '1'
+                        transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                    }
+                    break
+                case 40:
+                    if (transited < $slides.length - 1)
+                    {
+                        $slides[transited++].style.opacity = '0'
+                        $slider.style.transform = `translateY(${- transited * 100}vh)`
+                        $slides[transited].style.opacity = '1'
+                        transited == 0 ? $header.classList.remove('scrolled') : $header.classList.add('scrolled')
+                    }
+                    break
+            }
         })
     }
 }
