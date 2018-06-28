@@ -1,10 +1,10 @@
 <div class="slide2-container1">
     <div class="slide2-bar1">
-        <div class="slide2-bar1-fill"></div>
+        <div class="slide2-bar1-fill" data-fill"{{ chapter.slides.slide_2.bar_1.number }}"></div>
     </div>
     <div class="slide2-text-container">
-        <span class="slide2-subtitle">Terres cultivées<br></span>
-        <span class="slide2-number">+ 12 %<br></span>
+        <span class="slide2-subtitle">{{ chapter.slides.slide_2.bar_1.subtitle }}<br></span>
+        <span class="slide2-number">+ {{ chapter.slides.slide_2.bar_1.number }} %<br></span>
     </div>
 </div>
 <div class="slide2-container2">
@@ -12,14 +12,13 @@
         <div class="slide2-bar2-fill"></div>
     </div>
     <div class="slide2-text-container">
-        <span class="slide2-subtitle">Surfaces irriguées<br></span>
-        <span class="slide2-number">+ 117 %<br></span>
+        <span class="slide2-subtitle">{{ chapter.slides.slide_2.bar_1.subtitle }}<br></span>
+        <span class="slide2-number">+ {{ chapter.slides.slide_2.bar_2.number }} %<br></span>
     </div>
 </div>
 <div class="slide2-container3">
-    <!-- <div class="infos2">Comment l'expliquer ?</div>
-    <div class="infos2-text">L’irrigation constitue un outil de gestion efficace contre les <span class="text-bold">aléas</span> des précipitations. Elle permet de choisir des variétés à haut <span class="text-bold">rendement</span> en appliquant les fertilisants et traitements nécessaires.<br>
-        L’irrigation rend ces cultures économiquement intéressantes, et a pour effet de favoriser l’augmentation des rendements.</div> -->
-    <div class="infos2">Quelles conséquences ?</div>
-    <div class="infos2-text">Il y a des conséquences importantes sur la <span class="text-bold">pollution</span> des eaux des nappes et des rivières avec de fortes concentrations en <span class="text-bold">azote</span> et en <span class="text-bold">molécules</span> issues des produits phytosanitaires, ainsi qu’en phosphore dans certaines zones.</div>
+    <div class="infos js-popup1">{{ chapter.slides.slide_2.popup_1.question }}</div>
+    <div class="infos2-text js-popup-text1">{{ chapter.slides.slide_2.popup_1.text | raw }}</div>
+    <div class="infos js-popup2">{{ chapter.slides.slide_2.popup_2.question }}</div>
+    <div class="infos2-text js-popup-text2">{{ chapter.slides.slide_2.popup_2.text | raw }}</div>
 </div>
