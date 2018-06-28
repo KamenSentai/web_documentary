@@ -1,0 +1,151 @@
+header
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 17.5vh
+    font-family PNL
+    text-transform uppercase
+    z-index 5
+    .chapter-nav
+        position absolute
+        left 3rem
+        top 3rem
+        z-index 3
+        a
+            position relative
+            &::after
+                content ''
+                position absolute
+                left 0
+                top 112.5%
+                width 100%
+                height 0.0625rem
+                background-color #fff
+                transform-origin 0 0
+                transform scaleX(0)
+                composite(transform, 0.5s, ease-out)
+            &:hover::after
+                transform none
+    .chapter-numberhead
+        display flex
+        flex-direction column
+        position absolute
+        left 50%
+        top 3rem
+        width 100%
+        height calc(100% - 3rem)
+        transform translateX(-50%)
+        text-align center
+        z-index 2
+        .text
+            margin 0 auto
+        .number
+            margin auto
+            font-family PNR
+            font-size 3em
+        .border
+            margin auto auto 0 auto
+            width 12.5vw
+            height 0.25rem
+            background-color $blue
+
+.chapter-title
+    center()
+    top 35%
+    size(100%, auto)
+    font-family Exodus
+    color #FFFFFF
+    font-size 10vh
+    text-transform uppercase
+    text-align center
+    line-height 1.3
+.chapter-number-container
+    position absolute
+    left 50%
+    top 35%
+    transform translate(-50%, -45%)
+    opacity 0.5
+    text-align center
+    .chapter-number
+        font-family Exodus
+        font-size 45vh
+        color $blue
+    .chapter-line
+        size(30vw, 1vh)
+        background #09375A
+.chapter-p
+    position absolute
+    top 65%
+    left 50%
+    transform translateX(-50%)
+    color #FFFFFF
+    size(36%, auto)
+    font-family PNL
+    font-size 3vh
+    text-align center
+    line-height 1.5
+
+.chapter-explore-button
+    position absolute
+    text-align center
+    left 50%
+    bottom 3rem
+    cursor pointer
+    transform translateX(-50%)
+    &:hover
+        .chapter-explore-svg rect
+            animation cursorToggle 2s ease-in-out infinite
+        .chapter-explore-text
+            transform translateX(-50%)
+            opacity 1
+    .chapter-explore-svg
+        size(2.5rem, auto)
+        rect
+            transform translateY(0)
+            will-change transform
+    .chapter-explore-text
+        position absolute
+        left 50%
+        top 100%
+        font-family PNL
+        color #FFFFFF
+        transform translateX(-50%)
+        font-size 0.75rem
+        text-transform uppercase
+        transform-origin 0 2.5rem - 0.5rem
+        transform translateX(-50%) rotateX(-90deg)
+        opacity 0
+        composites(0.5s, ease-out, 0.5s, ease-out)
+
+.chapter-medias-button
+    position absolute
+    text-align center
+    bottom 3rem
+    right 3rem
+    cursor pointer
+    transform translateX(-50%)
+    &:hover
+        .chapter-medias-svg g
+            animation lockToggle 2s ease-in-out infinite
+        .chapter-medias-text
+            transform translateX(-50%)
+            opacity 1
+    .chapter-medias-svg
+        size(2.5rem, auto)
+        g
+            transform translateY(0)
+            will-change transform
+    .chapter-medias-text
+        position absolute
+        left 50%
+        top 100%
+        font-family PNL
+        color #FFFFFF
+        transform translateX(-50%)
+        font-size 0.75rem
+        text-transform uppercase
+        transform-origin 0 2.5rem - 0.5rem
+        transform translateX(-50%) rotateX(-90deg)
+        opacity 0
+        composites(0.5s, ease-out, 0.5s, ease-out)
