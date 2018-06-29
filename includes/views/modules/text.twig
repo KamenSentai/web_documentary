@@ -1,8 +1,16 @@
-<div class="container-text">
-    <div class="container-text-title">{{ _slide.title }}<br></div>
-    <div class="container-text-label">{{ _slide.label }}<br></div>
-    <div class="container-text-text">{{ _slide.text | raw }}<br></div>
-    <div class="container-text-text-border"></div>
+<div class="container-text {{ _slide.images is defined ? 'full' }}">
+    {% if _slide.images is defined %}
+        <div class="container-images">
+            {% for _image in _slide.images %}
+                <img class="container-image" src="{{ base_url() }}/assets/images/{{ _image }}" alt="{{ loop.index }}">
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="container-text-title">{{ _slide.title }}<br></div>
+        <div class="container-text-label">{{ _slide.label }}<br></div>
+        <div class="container-text-text">{{ _slide.text | raw }}<br></div>
+        <div class="container-text-text-border"></div>
+    {% endif %}
     {% if _slide.button is defined %}
         <button class="button-pop">{{ _slide.button }}</button>
     {% endif %}

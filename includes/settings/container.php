@@ -251,10 +251,25 @@ $container['chapters'] = function($container)
             ],
             'slide_3' =>
             [
+                'type'   => 'text',
+                'button' => 'Le voyage politique de l\'eau',
+                'images' =>
+                [
+                    'images_1' => 'paris_1.jpg',
+                    'images_2' => 'paris_2.jpg',
+                ],
+                'popups' =>
+                [
+                    'popup' =>
+                    [
+                        'title' => 'Le voyage politique de l\'eau',
+                        'text'  => 'En 2009, les parisiens ont connu une hausse en moyenne de <span class="text-bold">11,7%</span> ( 395 euros en moyenne) pour la taxe d\'habitation et de <span class="text-bold">47%</span> ( 552 euros en moyenne ) pour la taxe foncière. Dire que le passage de Paris en <span class="text-bold">régie publique</span> est la seule conséquence de l\'augmentation des impôts serait un raccourci trop facile, néanmoins le lien paraît évident.<br>En réalité, le coût dépend surtout de la <span class="text-bold">facilité d\'accès</span> aux points d\'approvisionnement en eau et de la <span class="text-bold">qualité</span> de cette eau. C\'est pour cette raison que les prix peuvent varier de 2,50 à 15€ le mètre cube rien qu\'en France.<br>Ce choix est également très politique, et il en va de la <span class="text-bold">réappropriation</span> du service public pour certains.',
+                    ],
+                ],
+            ],
+            'slide_4' =>
+            [
                 'type'        => 'character',
-                'button'      => 'LE VOYAGE POLITIQUE<br>DE L\'EAU',
-                'title'       => 'L\'EAU ET<br>LES IMPÔTS',
-                'text'        => 'En 2009, les parisiens ont connu une hausse en moyenne de <span class="text-bold">11,7%</span> ( 395 euros en moyenne) pour la taxe d\'habitation et de <span class="text-bold">47%</span> ( 552 euros en moyenne ) pour la taxe foncière. Dire que le passage de Paris en <span class="text-bold">régie publique</span> est la seule conséquence de l\'augmentation des impôts serait un raccourci trop facile, néanmoins le lien paraît évident.<br>En réalité, le coût dépend surtout de la <span class="text-bold">facilité d\'accès</span> aux points d\'approvisionnement en eau et de la <span class="text-bold">qualité</span> de cette eau. C\'est pour cette raison que les prix peuvent varier de 2,50 à 15€ le mètre cube rien qu\'en France.<br>Ce choix est également très politique, et il en va de la <span class="text-bold">réappropriation</span> du service public pour certains.',
                 'character_1' =>
                 [
                     'name'        => 'PIERRE MOSCOVICI',
@@ -271,7 +286,7 @@ $container['chapters'] = function($container)
                     'description' => 'D\'après Anne Le Strat, adjointe PS à la mairie de Paris <span class="text-bold">chargée de l\'eau</span> :<br>"Quand on regarde la carte de France de plus près, on voit que certaines villes de gauche ont décidé de rester délégataires tandis que des villes de droite ont cassé leur contrat pour passer en régie. Il faut donc se garder de tout raisonnement simpliste selon lequel les municipalités de gauche seraient plus favorables à une gestion publique que celles de droite.”',
                 ],
             ],
-            'slide_4' =>
+            'slide_5' =>
             [
                 'type'  => 'audio',
                 'title' => 'LES DIFFÉRENTES POLITIQUES DE L\'EAU',
