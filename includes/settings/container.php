@@ -191,54 +191,34 @@ $container['chapters'] = function($container)
             ],
             'slide_4' =>
             [
-                'type'     => 'fiveCircles',
-                'circle_1' =>
+                'type'   => 'fiveCircles',
+                'circles' =>
                 [
-                    'subtitle' => 'Boisson',
-                    'number'   => '1-3 L',
-                ],
-                'circle_2' =>
-                [
-                    'subtitle' => 'Chasse d\'eau',
-                    'number'   => '4-10 L',
-                ],
-                'circle_3' =>
-                [
-                    'subtitle' => 'Douche',
-                    'number'   => '30-80 L',
-                ],
-                'circle_4' =>
-                [
-                    'subtitle' => 'Lave-linge',
-                    'number'   => '120 L',
-                ],
-                'circle_5' =>
-                [
-                    'subtitle' => 'Bain',
-                    'number'   => '150-200 L',
-                ],
-                'quizz_1' =>
-                [
-                    'question' => 'Combien de litres d\'eau sont nécessaires pour un steak de boeuf de 250g ?',
-                    'correct'  => '3 850 L',
-                    'wrong   ' => '1 520 L',
-                ],
-                'quizz_2' =>
-                [
-                    'question' => 'Pour 1 kilo de beurre, il faut … litres d\'eau',
-                    'correct'  => '5 533 L',
-                    'wrong'    => '2 150 L',
-                ],
-                'quizz_3' =>
-                [
-                    'question' => '1 kilo de coton,<br>c\'est … litres d\'eau',
-                    'correct'  => '22 500 L',
-                    'wrong'    => '12 655 L',
-                ],
-                'redirection' =>
-                [
-                    'title' => 'Chapite 3',
-                    'text'  => 'La gestion de l\'eau',
+                    'circle_1' =>
+                    [
+                        'subtitle' => 'Boisson',
+                        'number'   => '1-3 L',
+                    ],
+                    'circle_2' =>
+                    [
+                        'subtitle' => 'Chasse d\'eau',
+                        'number'   => '4-10 L',
+                    ],
+                    'circle_3' =>
+                    [
+                        'subtitle' => 'Douche',
+                        'number'   => '30-80 L',
+                    ],
+                    'circle_4' =>
+                    [
+                        'subtitle' => 'Lave-linge',
+                        'number'   => '120 L',
+                    ],
+                    'circle_5' =>
+                    [
+                        'subtitle' => 'Bain',
+                        'number'   => '150-200 L',
+                    ],
                 ],
             ],
         ],
@@ -339,21 +319,16 @@ $container['chapters'] = function($container)
                 'label'       => 'UNE AFFOLANTE COURSE VERS L\'EAU',
                 'text'        => 'Si aujourd\'hui l\'eau potable est abondante, et <span class="text-bold">70%</span> des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à <span class="text-bold">50 ans</span>, un bien plus précieux que le pétrole.',
                 'button'      => 'Quel avenir ?',
-                'description' => 'Si l’eau venait à devenir un <span class="text-bold">actif financier</span>, la spéculation sur les prix de l’eau potable pourrait être <span class="text-bold">catastrophique</span> pour les pays du tiers monde.<br><br>
-                Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment <span class="text-bold">aucun surcoût</span> pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait <span class="text-bold">tuer</span> des millions d’êtres humains sur la planète.<br><br>
-                Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
+                'description' => 'Si l’eau venait à devenir un <span class="text-bold">actif financier</span>, la spéculation sur les prix de l’eau potable pourrait être <span class="text-bold">catastrophique</span> pour les pays du tiers monde.<br><br>Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment <span class="text-bold">aucun surcoût</span> pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait <span class="text-bold">tuer</span> des millions d’êtres humains sur la planète.<br><br>Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
             ],
             'slide_3' =>
             [
                 'type'        => 'video',
                 'title'       => 'NESTLÉ, PRIVATISER L\'EAU POUR MIEUX LA RÉPARTIR',
-                'text'        => '« We feed the world » - 2005 - Erwin Wagenhofer<br>
-                Interview du président de Nestlé, Peter Brabeck',
+                'text'        => '« We feed the world » - 2005 - Erwin Wagenhofer<br>Interview du président de Nestlé, Peter Brabeck',
                 'button'      => 'EN SAVOIR PLUS',
                 'name'        => 'Nestlé',
-                'description' => 'Après l\'énorme mouvement collectif d\'<span class="text-bold">indignation</span> et de colère que provoqua cette déclaration. Nestlé publia bon nombre de communiqué de presse et M. Brabeck fit quelques autres sorties remarquées pour clarifier son point de vue. Pour Nestlé, comme pour les <span class="text-bold">Nations Unies</span> :<br>                
-                « Notre planète dispose de suffisamment d\'eau fraîche pour couvrir les besoins de 7 milliards de personnes, mais ces ressources sont inégalement réparties. Une quantité malheureusement trop importante d\'eau est gaspillée, polluée et utilisée de façon non durable. »<br>                
-                Nestlé souhaite <span class="text-bold">privatiser</span> l\'eau dans le but de mieux la répartir, de manière triviale en empêchant les plus fortunés de remplir leurs piscines et les plus nécessiteux d\'avoir accès à l\'eau. Celle-ci devrait avoir une valeur en termes de <span class="text-bold">taxation</span> afin que chacun continue à l\'utiliser de façon responsable.',
+                'description' => 'Après l\'énorme mouvement collectif d\'<span class="text-bold">indignation</span> et de colère que provoqua cette déclaration. Nestlé publia bon nombre de communiqué de presse et M. Brabeck fit quelques autres sorties remarquées pour clarifier son point de vue. Pour Nestlé, comme pour les <span class="text-bold">Nations Unies</span> :<br>« Notre planète dispose de suffisamment d\'eau fraîche pour couvrir les besoins de 7 milliards de personnes, mais ces ressources sont inégalement réparties. Une quantité malheureusement trop importante d\'eau est gaspillée, polluée et utilisée de façon non durable. »<br>Nestlé souhaite <span class="text-bold">privatiser</span> l\'eau dans le but de mieux la répartir, de manière triviale en empêchant les plus fortunés de remplir leurs piscines et les plus nécessiteux d\'avoir accès à l\'eau. Celle-ci devrait avoir une valeur en termes de <span class="text-bold">taxation</span> afin que chacun continue à l\'utiliser de façon responsable.',
             ],
             'slide_4' =>
             [
