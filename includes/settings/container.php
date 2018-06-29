@@ -314,12 +314,19 @@ $container['chapters'] = function($container)
             ],
             'slide_2' =>
             [
-                'type'        => 'text',
-                'title'       => 'La ruee vers l\'or',
-                'label'       => 'UNE AFFOLANTE COURSE VERS L\'EAU',
-                'text'        => 'Si aujourd\'hui l\'eau potable est abondante, et <span class="text-bold">70%</span> des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à <span class="text-bold">50 ans</span>, un bien plus précieux que le pétrole.',
-                'button'      => 'Quel avenir ?',
-                'description' => 'Si l’eau venait à devenir un <span class="text-bold">actif financier</span>, la spéculation sur les prix de l’eau potable pourrait être <span class="text-bold">catastrophique</span> pour les pays du tiers monde.<br><br>Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment <span class="text-bold">aucun surcoût</span> pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait <span class="text-bold">tuer</span> des millions d’êtres humains sur la planète.<br><br>Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
+                'type'   => 'text',
+                'title'  => 'La ruee vers l\'or',
+                'label'  => 'UNE AFFOLANTE COURSE VERS L\'EAU',
+                'text'   => 'Si aujourd\'hui l\'eau potable est abondante, et <span class="text-bold">70%</span> des personnes qui vivent sur Terre y ont accès, cela ne sera plus le cas dans quelques temps. Selon une étude des Nations Unies, l\'eau pourrait devenir, d\'ici à <span class="text-bold">50 ans</span>, un bien plus précieux que le pétrole.',
+                'button' => 'Quel avenir ?',
+                'popups' =>
+                [
+                    'popup' =>
+                    [
+                        'title' => 'Quel avenir ?',
+                        'text'  => 'Si l’eau venait à devenir un <span class="text-bold">actif financier</span>, la spéculation sur les prix de l’eau potable pourrait être <span class="text-bold">catastrophique</span> pour les pays du tiers monde.<br><br>Pourtant, contrairement aux denrées alimentaires qui nécessite des techniques agricoles particulières, il n’y a quasiment <span class="text-bold">aucun surcoût</span> pour l’eau potable. C’est d’ailleurs l’un des arguments majeurs luttant contre la privatisation de l’eau. Cette action pourrait <span class="text-bold">tuer</span> des millions d’êtres humains sur la planète.<br><br>Mais la raréfaction de cette ressource, les tensions qu’elle provoque, pousse de plus en plus d’acteurs à réfléchir à la financiarisation de l’eau.',
+                    ],
+                ],
             ],
             'slide_3' =>
             [
@@ -332,10 +339,10 @@ $container['chapters'] = function($container)
             ],
             'slide_4' =>
             [
-                'type'        => 'text',
-                'title'       => 'CONFLITS MILITAIRES',
-                'label'       => '« EAU RAGE, EAU DÉSESPOIR »',
-                'text'        => 'L\'accès à l\'eau pourrait devenir l\'une des premières causes de <span class="text-bold">tensions internationales</span>. Plus de 40 % de la population mondiale est établie dans les <span class="text-bold">250 bassins</span> fluviaux transfrontaliers du globe. Elles ont toutes l\'obligation de partager leurs ressources en eau avec les habitants d\'un pays voisin.',
+                'type'  => 'text',
+                'title' => 'CONFLITS MILITAIRES',
+                'label' => '« EAU RAGE, EAU DÉSESPOIR »',
+                'text'  => 'L\'accès à l\'eau pourrait devenir l\'une des premières causes de <span class="text-bold">tensions internationales</span>. Plus de 40 % de la population mondiale est établie dans les <span class="text-bold">250 bassins</span> fluviaux transfrontaliers du globe. Elles ont toutes l\'obligation de partager leurs ressources en eau avec les habitants d\'un pays voisin.',
             ],
             'slide_5' =>
             [
@@ -344,19 +351,24 @@ $container['chapters'] = function($container)
                 'label'        => '« EAU RAGE, EAU DÉSESPOIR »',
                 'text'         => 'Une telle situation peut être à l\'origine de <span class="text-bold">conflits</span> récurrents, notamment lorsqu\'un cours d\'eau traverse une frontière, car l\'eau devient alors un véritable <span class="text-bold">instrument de pouvoir</span> aux mains du pays situé en amont. Qu\'il soit puissant ou non, celui-ci a toujours théoriquement l\'avantage, puisqu\'il a la maîtrise du débit de l\'eau.',
                 'button'       => 'HISTOIRE DE POUVOIR',
-                'description1' =>
+                'popups' =>
                 [
-                    'name'        => 'SUIVRE LE NIL',
-                    'description' => 'L\'Égypte, entièrement tributaire du Nil pour ses ressources en eau, doit néanmoins partager celles-ci avec <span class="text-bold">10</span> autres États du bassin du Nil : notamment avec l\'<span class="text-bold">Ethipie</span> où le Nil bleu prend sa source, et avec le <span class="text-bold">Soudan</span> où le fleuve serpente avant de déboucher sur le territoire égyptien.',
+                    'popup_1' =>
+                    [
+                        'title' => 'Suivre le nil',
+                        'text'  => 'L\'Égypte, entièrement tributaire du Nil pour ses ressources en eau, doit néanmoins partager celles-ci avec <span class="text-bold">10</span> autres États du bassin du Nil : notamment avec l\'<span class="text-bold">Ethipie</span> où le Nil bleu prend sa source, et avec le <span class="text-bold">Soudan</span> où le fleuve serpente avant de déboucher sur le territoire égyptien.',
+                    ],
+                    'popup_2' =>
+                    [
+                        'title' => 'La Turquis',
+                        'text'  => 'Quant à l\'<span class="text-bold">Irak</span> et à la <span class="text-bold">Syrie</span>, ils sont tous deux à la merci de la <span class="text-bold">Turquie</span>, où les deux fleuves qui les alimentent, le Tigre et l\'Euphrate, prennent leur source. L\'eau de l\'Euphrate a d\'ailleurs souvent servi d\'arme brandie par la Turquie contre ses deux voisins : grâce aux nombreux barrages qu\'elle a érigés sur le cours supérieur du fleuve et qui lui permettent d\'en réguler à sa guise le débit en aval, la Turquie possède là, en effet, un puissant moyen de pression.',
+                    ],
+                    'popup_3' =>
+                    [
+                        'title' => 'Quel avenir ?',
+                        'text'  => 'Avec l\'essor démographique et l\'accroissement des besoins, ces tensions pourraient se multiplier à l\'avenir. C\'est ce que prédisent certains experts pour le XXIe siècle. D\'autres en revanche pensent que la gestion commune de l\'eau peut être un facteur de pacification. Ils mettent en avant des exemples étonnants de coopération : le plus fameux est celui de l\'Inde et du Pakistan qui, au plus fort de la guerre qui les opposait dans les années 1960, n\'ont jamais interrompu le financement des travaux d\'aménagement qu\'ils menaient en commun sur le fleuve Indus.',
+                    ],
                 ],
-                'description2' =>
-                [
-                    'name'        => 'LA TURQUIE',
-                    'description' => 'Quant à l\'<span class="text-bold">Irak</span> et à la <span class="text-bold">Syrie</span>, ils sont tous deux à la merci de la <span class="text-bold">Turquie</span>, où les deux fleuves qui les alimentent, le Tigre et l\'Euphrate, prennent leur source. L\'eau de l\'Euphrate a d\'ailleurs souvent servi d\'arme brandie par la Turquie contre ses deux voisins : grâce aux nombreux barrages qu\'elle a érigés sur le cours supérieur du fleuve et qui lui permettent d\'en réguler à sa guise le débit en aval, la Turquie possède là, en effet, un puissant moyen de pression.',
-                ],
-                'button2'     => 'En savoir plus',
-                'name'        => 'Quel avenir ?',
-                'description' => 'Avec l\'essor démographique et l\'accroissement des besoins, ces tensions pourraient se multiplier à l\'avenir. C\'est ce que prédisent certains experts pour le XXIe siècle. D\'autres en revanche pensent que la gestion commune de l\'eau peut être un facteur de pacification. Ils mettent en avant des exemples étonnants de coopération : le plus fameux est celui de l\'Inde et du Pakistan qui, au plus fort de la guerre qui les opposait dans les années 1960, n\'ont jamais interrompu le financement des travaux d\'aménagement qu\'ils menaient en commun sur le fleuve Indus.',
             ],
             'slide_6' => 
             [

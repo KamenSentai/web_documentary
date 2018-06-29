@@ -1,70 +1,86 @@
-.slide3-container2
-    center()
-    text-align center
-    width 70%
-    .slide3-container2-title
-        font-family Exodus
-        font-size 5.5vh
-        padding 0 0 6% 0
-        top 20vh
-    .slide3-container2-label
-        font-family Exodus
-        padding 3% 0
-        font-size 2vh
-    .slide3-container2-text
-        font-family PNR
-        padding 6% 0
-        font-size 3vh
-        .text-bold
-            font-family PNB
-    .slide3-container2-text-border
-        margin auto auto 0 auto
-        width 12.5vw
-        height 0.25rem
-        background-color #09375a
-    .slide3-button
-        size(auto, auto)
-        padding 2vh 3vw
-        border 1px solid #FFFFFF
-        font-family PNR
-        font-size 3vh
-        text-transform uppercase
-        text-align center
-        margin-top 2vh
-        margin-bottom 0
-        cursor pointer
-        opacity 0.5
-        &:hover
-            opacity 1
-    .slide3-button-pop
+.area.text
+    .container-text
         center()
-        size(30vw, auto)
-        background #FFFFFF
-        color #01111D
-        padding 5vh 3vw
-        border 5px solid #09375A
-        display none
-        opacity 0
-        composite(opacity, 0.5s, ease)
-        .pop-title
-            font-family PNB
-            font-size 3.5vh
-            text-transform uppercase
-            letter-spacing 2
-        .slide3-container2-text-border
-            margin 3vh auto
-            width 23vw
-            height 0.25rem
-            background-color #09375a
-        .pop-description
-            font-family PNR
-            font-size 2.5vh
-            line-height 1.3
-            text-align left
+        text-align center
+        width 75%
+        .container-text-title
+            font-family Exodus
+            font-size 3rem
+        .container-text-label
+            font-family Exodus
+            margin-top 1rem
+            margin-bottom 1.5rem
+        .container-text-text
+            font-family PNL
+            font-size 1.5rem
             .text-bold
                 font-family PNB
-        .pop-button-close
+        .container-text-text-border
+            margin 1.5rem auto 1.5rem auto
+            width 12.5%
+            height 0.25rem
+            background-color $blue
+            opacity 0.5
+
+    .button-pop
+        size(auto, auto)
+        padding 1.5rem 2.5rem
+        border 0.125rem solid #fff
+        font-family PNR
+        font-size 1.75rem
+        text-transform uppercase
+        text-align center
+        cursor pointer
+        opacity 0.5
+        margin-top 1rem
+        composite(opacity, 0.25s, ease-out)
+        &:hover
+            opacity 1
+
+    .container-popups
+        display flex
+        flex-direction row
+        justify-content space-between
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        z-index -1
+    .bar-pop
+        display none
+        margin auto
+        width 30%
+        height 100%
+        padding 2rem
+        color $blue
+        font-family PNL
+        box-shadow 0 0 3rem rgba(#000, 0.5)
+        background-color #fff
+        h5
+            position relative
+            font-size 1.25rem
+            margin-bottom 3rem
+            text-align center
+            font-family PNR
+            &::after
+                content ''
+                position absolute
+                left 0
+                bottom -1.5rem
+                width 100%
+                height 0.25rem
+                background-color $blue
+        p
+            margin-bottom 1em
+        .close
             position absolute
-            right 2vh
-            bottom 2vh
+            bottom 2rem
+            left 50%
+            font-size 1.5em
+            transform translateX(-50%)
             cursor pointer
+            opacity 0.5
+            composite(opacity, 0.5s, ease-out)
+            &:hover
+                opacity 1

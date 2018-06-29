@@ -67,4 +67,76 @@ export default function setBar($container = document.querySelector('.barba-conta
             }
         }
     }
+
+    const $texts = $container.querySelectorAll('.text')
+
+    if ($texts.length > 0)
+    {
+        for (const $text of $texts)
+        {
+            const $popups = $text.querySelector('.container-popups')
+    
+            if ($popups)
+            {
+                const $button = $text.querySelector('.button-pop')
+                const $pops = $popups.querySelectorAll('.bar-pop')
+                const $closes = $popups.querySelectorAll('.close')
+
+                const $overlay = document.createElement('div')
+                $overlay.style.position        = 'absolute'
+                $overlay.style.left            = '0'
+                $overlay.style.top             = '0'
+                $overlay.style.width           = '100vw'
+                $overlay.style.height          = '100vh'
+                $overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.75)'
+                $overlay.style.transition      = 'opacity 0.5s ease-out'
+                $overlay.style.opacity         = '0'
+                $overlay.style.willChange      = 'opacity'
+                $overlay.style.zIndex          = '-1'
+                const $area   = $container.querySelector('.area')
+                const $header = $container.querySelector('header')
+                const offX    = $area.getBoundingClientRect().left
+                const offY    = $header.getBoundingClientRect().height + $header.getBoundingClientRect().top
+                $overlay.style.transform = `translate(${- offX}px, calc(${- offY}px - 0.5rem))`
+                $popups.insertBefore($overlay, $pops[0])
+
+                $button.addEventListener('click', () =>
+                {
+                    for (const $pop of $pops)
+                    {
+                        $pop.style.display = 'block'
+                        $pop.style.zIndex   = '1'
+                    }
+                    $overlay.style.zIndex  = '0'
+                    $overlay.style.opacity = '1'
+                    $popups.style.zIndex   = '1'
+                })
+
+                for (const $close of $closes)
+                {
+                    $close.addEventListener('click', () =>
+                    {
+                        for (const $pop of $pops)
+                        {
+                            $pop.style.display = 'none'
+                        }
+                        $overlay.style.zIndex  = '-1'
+                        $overlay.style.opacity = '0'
+                        $popups.style.zIndex   = '-1'
+                    })
+                }
+
+                $overlay.addEventListener('click', () =>
+                {
+                    for (const $pop of $pops)
+                    {
+                        $pop.style.display = 'none'
+                    }
+                    $overlay.style.zIndex  = '-1'
+                    $overlay.style.opacity = '0'
+                    $popups.style.zIndex   = '-1'
+                })
+            }
+        }
+    }
 }

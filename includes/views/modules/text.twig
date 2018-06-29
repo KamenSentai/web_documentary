@@ -1,15 +1,20 @@
-<div class="slide3-container2">
-    <div class="slide3-container2-title">{{ _slide.title }}<br></div>
-    <div class="slide3-container2-label">{{ _slide.label }}<br></div>
-    <div class="slide3-container2-text">{{ _slide.text | raw }}<br></div>
-    <div class="slide3-container2-text-border"></div>
+<div class="container-text">
+    <div class="container-text-title">{{ _slide.title }}<br></div>
+    <div class="container-text-label">{{ _slide.label }}<br></div>
+    <div class="container-text-text">{{ _slide.text | raw }}<br></div>
+    <div class="container-text-text-border"></div>
     {% if _slide.button is defined %}
-        <button class="slide3-button">{{ _slide.button }}</button>
-        <div class="slide3-button-pop">
-            <span class="pop-title">{{ _slide.button }}</span>
-            <div class="slide3-container2-text-border"></div>
-            <p class="pop-description">{{ _slide.description | raw }}</p>
-            <button class="pop-button-close">&#x2715;</button>
-        </div>
+        <button class="button-pop">{{ _slide.button }}</button>
     {% endif %}
 </div>
+{% if _slide.button is defined %}
+    <div class="container-popups">
+        {% for _popup in _slide.popups %}
+            <div class="bar-pop">
+                <h5>{{ _popup.title }}</h5>
+                <div>{{ _popup.text | raw }}</div>
+                <span class="close">&#x2715;</span>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
