@@ -58,24 +58,30 @@ $container['chapters'] = function($container)
             ],
             'slide_2' => 
             [
-                'type'      => 'threeBars',
-                'bar_1' =>
+                'type' => 'threeBars',
+                'bars' =>
                 [
-                    'title'  => 'Géants de l\'eau',
-                    'number' => '60 %',
-                    'text'   => 'des ressources naturelles d\'eau douce sont partagées entre 9 pays. Le monde en compte 197.',
-                ],
-                'bar_2' =>
-                [
-                    'title'  => 'Inaccessible',
-                    'number' => '10 %',
-                    'text'   => 'de la population mondiale n\'a pas accès à l\'eau potable. Soit 748 millions d\'humains.',
-                ],
-                'bar_3' =>
-                [
-                    'title'  => 'Course contre la montre',
-                    'number' => '5 Humains',
-                    'text'   => 'meurent toutes les minutes parce qu\'ils n\'ont pas accès à l\'eau potable.',
+                    'bar_1' =>
+                    [
+                        'title'  => 'Géants de l\'eau',
+                        'number' => '60 %',
+                        'fill'   => '60',
+                        'text'   => 'des ressources naturelles d\'eau douce sont partagées entre 9 pays. Le monde en compte 197.',
+                    ],
+                    'bar_2' =>
+                    [
+                        'title'  => 'Inaccessible',
+                        'number' => '10 %',
+                        'fill'   => '10',
+                        'text'   => 'de la population mondiale n\'a pas accès à l\'eau potable. Soit 748 millions d\'humains.',
+                    ],
+                    'bar_3' =>
+                    [
+                        'title'  => 'Course contre la montre',
+                        'number' => '5 humains',
+                        'fill'   => '50',
+                        'text'   => 'meurent toutes les minutes parce qu\'ils n\'ont pas accès à l\'eau potable.',
+                    ],
                 ],
             ],
         ],
@@ -363,32 +369,34 @@ $container['chapters'] = function($container)
             ],
             'slide_6' => 
             [
-                'type'      => 'threeBars',
-                'bar_1' =>
+                'type' => 'threeBars',
+                'bars' =>
                 [
-                    'title'  => 'CROISSANCE',
-                    'ispourcentage' => false,
-                    'number' => '458 milliards',
-                    'text'   => 'd\'euros de perte, voilà ce que représente la pénurie d\'eau, soit 1% du PIB mondial.',
-                ],
-                'bar_2' =>
-                [
-                    'title'  => 'SANTÉ, DANGER',
-                    'ispourcentage' => false,
-                    'number' => '3,5 milliards',
-                    'text'   => 'de la population mondiale boivent une eau dangereuse pour leur santé.',
-                ],
-                'bar_3' =>
-                [
-                    'title'  => 'CONTAMINATION',
-                    'ispourcentage' => false,
-                    'number' => '1,8 milliards',
-                    'text'   => 'd\'humains s\'abreuvent à des points d\'eau contaminés par les matières fécales, etc.',
+                    'bar_1' =>
+                    [
+                        'title'  => 'CROISSANCE',
+                        'number' => '458 milliards',
+                        'fill'   => '60',
+                        'text'   => 'd\'euros de perte, voilà ce que représente la pénurie d\'eau, soit 1% du PIB mondial.',
+                    ],
+                    'bar_2' =>
+                    [
+                        'title'  => 'SANTÉ, DANGER',
+                        'number' => '3,5 milliards',
+                        'fill'   => '80',
+                        'text'   => 'de la population mondiale boivent une eau dangereuse pour leur santé.',
+                    ],
+                    'bar_3' =>
+                    [
+                        'title'  => 'CONTAMINATION',
+                        'number' => '1,8 milliards',
+                        'fill'   => '50',
+                        'text'   => 'd\'humains s\'abreuvent à des points d\'eau contaminés par les matières fécales, etc.',
+                    ],
                 ],
                 'button'      => 'EN SAVOIR PLUS',
                 'name'        => 'EAU, INFINI ESPOIR',
-                'description' => 'Alors que se profile une <span class="text-bold">pénurie</span> mondiale, la question de la gestion de l’eau n’est presque pas posée. Nous n’avons toujours pas su définir ce que l’eau était pour l’homme en termes de <span class="text-bold">droit international</span>, nous n’avons pas réglé le problème de <span class="text-bold">répartition</span> de l’eau dans le monde, ains que celui du problème de la <span class="text-bold">qualité</span> de l’eau dans le monde.<br>
-                L’eau, <span class="text-bold">illusion</span> parfaite d’une ressource infinie, est aujourd’hui le dernier de nos soucis. Par manque de vision à long-terme et de prévoyance, il pourrait bien devenir le premier très rapidement, et ainsi s’ajouter à la longue liste de ce que la civilisation humaine aurait pu éviter.',
+                'description' => '<p>Alors que se profile une <span class="text-bold">pénurie</span> mondiale, la question de la gestion de l’eau n’est presque pas posée. Nous n’avons toujours pas su définir ce que l’eau était pour l’homme en termes de <span class="text-bold">droit international</span>, nous n’avons pas réglé le problème de <span class="text-bold">répartition</span> de l’eau dans le monde, ains que celui du problème de la <span class="text-bold">qualité</span> de l’eau dans le monde.</p><p>L’eau, <span class="text-bold">illusion</span> parfaite d’une ressource infinie, est aujourd’hui le dernier de nos soucis. Par manque de vision à long-terme et de prévoyance, il pourrait bien devenir le premier très rapidement, et ainsi s’ajouter à la longue liste de ce que la civilisation humaine aurait pu éviter.</p>',
             ],
         ],
     ];

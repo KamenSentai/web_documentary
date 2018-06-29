@@ -1,34 +1,30 @@
-<div class="slide1-container1">
-    <div class="slide1-bar1">
-        <div class="slide1-bar1-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_1.number }}"></div>
+{% for _bar in _slide.bars %}
+    <div class="container-bar">
+        <div class="container-fill" data-fill="{{ _bar.fill }}">
+            <div class="container-filler"></div>
+        </div>
+        <div class="container-data">
+            <div class="container-title">{{ _bar.title }}</div>
+            <div class="container-number">{{ _bar.number }}</div>
+            <div class="container-text">{{ _bar.text }}</div>
+        </div>
     </div>
-    <div class="slide1-text-container">
-        <span class="slide1-subtitle">{{ _slide.bar_1.title }}<br></span>
-        <span class="slide1-number">{{ _slide.bar_1.number }}<br></span><p class="slide1-text">{{ _slide.bar_1.text }}</p>
-    </div>
-</div>
-<div class="slide1-container2">
-    <div class="slide1-bar2">
-        <div class="slide1-bar2-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_2.number }}"></div>
-    </div>
-    <div class="slide1-text-container">
-        <span class="slide1-subtitle">{{ _slide.bar_2.title }}<br></span>
-        <span class="slide1-number">{{ _slide.bar_2.number }}<br></span><p class="slide1-text">{{ _slide.bar_2.text }}</p>
-    </div>
-</div>
-<div class="slide1-container3">
-    <div class="slide1-bar3"></div>
-    <div class="slide1-text-container">
-        <span class="slide1-subtitle">{{ _slide.bar_3.title }}<br></span>
-        <span class="slide1-number">{{ _slide.bar_3.number }}<br></span><p class="slide1-text">{{ _slide.bar_3.text }}</p>
-    </div>
-</div>
+{% endfor %}
 {% if _slide.button is defined %}
-    <button class="slide6-button">{{ _slide.button }}</button>
-    <div class="slide6-button-pop">
-        <span class="pop-title">{{ _slide.button }}</span>
-        <div class="slide6-container2-text-border"></div>
-        <p class="pop-description">{{ _slide.description | raw }}</p>
-        <button class="pop-button-close2">&#x2715;</button>
+    <div class="bar-popup">
+        <button class="bar-button">
+            <svg width="28px" height="37px" viewBox="0 0 28 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Group" style="fill:#ffffff;">
+                    <path d="M25.152931,36.6391526 L2.70185517,36.6391526 C1.1915931,36.6391526 0.00849655172,35.3992145 0.00849655172,33.8160526 L0.00849655172,3.11647105 C0.00849655172,1.57133158 1.1915931,0.360847368 2.70185517,0.360847368 L20.2061034,0.360847368 C20.3371724,0.360847368 20.4627862,0.414594737 20.5537862,0.509675 L27.8564759,8.15080789 C27.9429862,8.24160395 27.9915517,8.36282763 27.9915517,8.48882237 L27.9915517,33.8160526 C27.9915034,35.3464408 26.691531,36.6391526 25.152931,36.6391526 Z M2.70185517,1.33453158 C1.71678621,1.33453158 0.974013793,2.10043158 0.974013793,3.11647105 L0.974013793,33.8160526 C0.974013793,34.8529776 1.73305517,35.6654684 2.70185517,35.6654684 L25.1529793,35.6654684 C26.1507931,35.6654684 27.0260345,34.8011289 27.0260345,33.8160526 L27.0260345,8.68516579 L20.0007862,1.33453158 L2.70185517,1.33453158 Z" id="Shape"></path>
+                    <path d="M27.5087448,9.00945132 L22.4893103,9.00945132 C20.9790483,9.00945132 19.7959517,7.76951316 19.7959517,6.18635132 L19.7959517,0.847689474 C19.7959517,0.578611842 20.012131,0.360847368 20.2787103,0.360847368 C20.5452897,0.360847368 20.761469,0.578611842 20.761469,0.847689474 L20.761469,6.18630263 C20.761469,7.22322763 21.5205103,8.03571842 22.4893103,8.03571842 L27.5087931,8.03571842 C27.7753724,8.03571842 27.9915517,8.25348289 27.9915517,8.52256053 C27.9915517,8.79163816 27.7753724,9.00945132 27.5087448,9.00945132 Z" id="Shape"></path>
+                </g>
+            </svg>
+            <span class="label">En savoir plus</span>
+        </button>
+        <div class="bar-pop">
+            <h5>{{ _slide.name }}</h5>
+            <div>{{ _slide.description | raw }}</div>
+            <span class="close">&#x2715;</span>
+        </div>
     </div>
 {% endif %}
