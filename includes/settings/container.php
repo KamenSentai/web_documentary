@@ -419,6 +419,13 @@ $container['chapters'] = function($container)
                 'name'        => 'EAU, INFINI ESPOIR',
                 'description' => '<p>Alors que se profile une <span class="text-bold">pénurie</span> mondiale, la question de la gestion de l’eau n’est presque pas posée. Nous n’avons toujours pas su définir ce que l’eau était pour l’homme en termes de <span class="text-bold">droit international</span>, nous n’avons pas réglé le problème de <span class="text-bold">répartition</span> de l’eau dans le monde, ains que celui du problème de la <span class="text-bold">qualité</span> de l’eau dans le monde.</p><p>L’eau, <span class="text-bold">illusion</span> parfaite d’une ressource infinie, est aujourd’hui le dernier de nos soucis. Par manque de vision à long-terme et de prévoyance, il pourrait bien devenir le premier très rapidement, et ainsi s’ajouter à la longue liste de ce que la civilisation humaine aurait pu éviter.</p>',
             ],
+            'slide_7' =>
+            [
+                'type'  => 'text',
+                'title' => 'À MÉDITER',
+                'label' => 'Antoine de Saint-Exupéry',
+                'text'  => '« Eau, tu n\'as ni goût, ni couleur, ni arôme, on ne peut pas te définir, on te goûte, sans te connaître. Tu n\'es pas nécessaire à la vie : tu es la vie. »',
+            ],
         ],
     ];
 
