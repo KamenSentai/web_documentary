@@ -1,40 +1,22 @@
 export default function setPopup($container = document.querySelector('.barba-container'))
 {
-    const $popup = $container.querySelector('.two-bars-container')
+    const $containerPopups = $container.querySelectorAll('.container-popups')
 
-    if ($popup)
+    if ($containerPopups.length > 0)
     {
-        const $twoBars = $container.querySelectorAll('.twoBars')
+        for (const $containerPopup of $containerPopups)
+        {
+            const $popups = $containerPopup.querySelectorAll('.container-popup')
 
-        for (const $twoBars_ of $twoBars) {
-            const $popup1 = $twoBars_.querySelector('.js-popup1')
-            const $popup2 = $twoBars_.querySelector('.js-popup2')
-            const $popupText1 = $twoBars_.querySelector('.js-popup-text1')
-            const $popupText2 = $twoBars_.querySelector('.js-popup-text2')
+            for (const $popup of $popups)
+            {
+                const $question = $popup.querySelector('.container-question')
 
-            $popup1.addEventListener('click', (event) => {
-                if(!$popup1.classList.contains('infos2')) {
-                    $popup2.style.display = 'none'
-                    $popupText1.style.display = 'block'
-                    $popup1.classList.add('infos2')
-                } else if($popup1.classList.contains('infos2')) {
-                    $popup2.style.display = 'block'
-                    $popupText1.style.display = 'none'
-                    $popup1.classList.remove('infos2')
-                }
-            })
-
-            $popup2.addEventListener('click', (event) => {
-                if(!$popup2.classList.contains('infos2')) {
-                    $popup1.style.display = 'none'
-                    $popupText2.style.display = 'block'
-                    $popup2.classList.add('infos2')
-                } else if($popup2.classList.contains('infos2')) {
-                    $popup1.style.display = 'block'
-                    $popupText2.style.display = 'none'
-                    $popup2.classList.remove('infos2')
-                }
-            })
+                $question.addEventListener('click', () =>
+                {
+                    $popup.classList.toggle('active')
+                })
+            }
         }
     }
 }

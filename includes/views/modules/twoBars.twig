@@ -1,4 +1,27 @@
-<div class="two-bars-container">
+{% for _bar in _slide.bars %}
+    <div class="container-bar">
+        <div class="container-fill" data-fill="{{ _bar.fill }}">
+            <div class="container-filler"></div>
+        </div>
+        <div class="container-data">
+            <div class="container-title">{{ _bar.title }}</div>
+            <div class="container-number">{{ _bar.number }}</div>
+            <div class="container-text">{{ _bar.text }}</div>
+        </div>
+    </div>
+{% endfor %}
+<div class="container-popups">
+    {% for _popup in _slide.popups %}
+        <div class="container-popup">
+            <div class="container-question">{{ _popup.question }}
+                    <span class="container-arrow">&#8249;</span>
+            </div>
+            <div class="container-text">{{ _popup.text | raw }}</div>
+        </div>
+    {% endfor %}
+</div>
+
+<!-- <div class="two-bars-container">
     <div class="slide2-container1">
         <div class="slide2-bar1">
             <div class="slide2-bar1-fill" data-fill"{{ not _slide.ispercentage ? 0 : _slide.bar_1.number }}"></div>
@@ -23,4 +46,4 @@
         <div class="infos js-popup2">{{ _slide.popup_2.question }}</div>
         <div class="infos2-text js-popup-text2">{{ _slide.popup_2.text | raw }}</div>
     </div>
-</div>
+</div> -->

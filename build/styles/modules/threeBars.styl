@@ -8,7 +8,7 @@
         flex-direction row
         justify-content space-between
         margin auto 0
-        height 100%
+        height 50%
         .container-fill
             position relative
             width 2rem
@@ -21,7 +21,7 @@
                 bottom 0
                 width 100%
                 height 100%
-                background-color $lightBlue
+                background-color rgba($lightBlue, 0.75)
                 transform-origin 0 100%
         .container-data
             margin auto 0
@@ -97,36 +97,3 @@
             composite(opacity, 0.5s, ease-out)
             &:hover
                 opacity 1
-
-.slide6-button-pop
-    center()
-    size(30vw, auto)
-    background #FFFFFF
-    color #01111D
-    padding 5vh 3vw
-    border 5px solid #09375A
-    display none
-    opacity 0
-    composite(opacity, 0.5s, ease)
-    .pop-title
-        font-family PNB
-        font-size 3.5vh
-        text-transform uppercase
-        letter-spacing 2
-    .slide6-container2-text-border
-        margin 3vh auto
-        width 23vw
-        height 0.25rem
-        background-color #09375a
-    .pop-description
-        font-family PNR
-        font-size 2.5vh
-        line-height 1.3
-        text-align left
-        .text-bold
-            font-family PNB
-    .pop-button-close2
-        position absolute
-        right 2vh
-        bottom 2vh
-        cursor pointer

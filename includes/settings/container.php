@@ -125,52 +125,68 @@ $container['chapters'] = function($container)
             ],
             'slide_2' =>
             [
-                'type'  => 'twoBars',
-                'bar_1' =>
+                'type' => 'twoBars',
+                'bars' =>
                 [
-                    'subtitle' => 'Terres cultivées',
-                    'number'   => '12',
+                    'bar_1' =>
+                    [
+                        'title'  => 'Terres cultivées',
+                        'number' => '12 %',
+                        'fill'   => '12',
+                    ],
+                    'bar_2' =>
+                    [
+                        'title'  => 'Surfaces irriguées',
+                        'number' => '117 %',
+                        'fill'   => '117',
+                    ],
                 ],
-                'bar_2' =>
+                'popups' =>
                 [
-                    'subtitle' => 'Surfaces irriguées',
-                    'number'   => '117',
-                ],
-                'popup_1' =>
-                [
-                    'question' => 'Comment l\'expliquer ?',
-                    'text'     => 'L\'irrigation constitue un outil de gestion efficace contre les aléas des précipitations. Elle permet de choisir des variétés à haut <span class="text-bold">rendement</span> en appliquant les fertilisants et traitements nécessaires.<br>L\'irrigation rend ces cultures économiquement intéressantes, et a pour effet de favoriser l\'augmentation des rendements.',
-                ],
-                'popup_2' =>
-                [
-                    'question' => 'Quelles conséquences ?',
-                    'text'     => 'Il y a des conséquences importantes sur la <span class="text-bold">pollution</span> des eaux des nappes et des rivières avec de fortes concentrations en <span class="text-bold">azote</span> et en <span class="text-bold">molécules</span> issues des produits phytosanitaires, ainsi qu\'en phosphore dans certaines zones.',
+                    'popup_1' =>
+                    [
+                        'question' => 'Comment l\'expliquer ?',
+                        'text'     => 'L\'irrigation constitue un outil de gestion efficace contre les aléas des précipitations. Elle permet de choisir des variétés à haut <span class="text-bold">rendement</span> en appliquant les fertilisants et traitements nécessaires.<br>L\'irrigation rend ces cultures économiquement intéressantes, et a pour effet de favoriser l\'augmentation des rendements.',
+                    ],
+                    'popup_2' =>
+                    [
+                        'question' => 'Quelles conséquences ?',
+                        'text'     => 'Il y a des conséquences importantes sur la <span class="text-bold">pollution</span> des eaux des nappes et des rivières avec de fortes concentrations en <span class="text-bold">azote</span> et en <span class="text-bold">molécules</span> issues des produits phytosanitaires, ainsi qu\'en phosphore dans certaines zones.',
+                    ],
                 ],
             ],
             'slide_3' =>
             [
-                'type'  => 'twoBars',
-                'bar_1' =>
+                'type' => 'twoBars',
+                'bars' =>
                 [
-                    'subtitle' => 'REFROIDISSMENT RÉACTEURS',
-                    'number'   => '66',
-                    'infos'    => 'de l\'eau utilisée par le secteur industriel est pour le refroidissment des réacteurs',
+                    'bar_1' =>
+                    [
+                        'title'  => 'REFROIDISSMENT RÉACTEURS',
+                        'number' => '66 %',
+                        'fill'   => '66',
+                        'text'   => 'de l\'eau utilisée par le secteur industriel est pour le refroidissment des réacteurs',
+                    ],
+                    'bar_2' =>
+                    [
+                        'title'  => 'PRODUCTION ENERGIE',
+                        'number' => '34 %',
+                        'fill'   => '34',
+                        'text'   => 'de l\'eau sert à la production d\'énergie.',
+                    ],
                 ],
-                'bar_2' =>
+                'popups' =>
                 [
-                    'subtitle' => 'PRODUCTION ENERGIE',
-                    'number'   => '34',
-                    'infos'    => 'de l\'eau sert à la production d\'énergie.',
-                ],
-                'popup_1' =>
-                [
-                    'question' => 'EN TURQUIE',
-                    'text'     => 'En 2013, le gouvernement turc a <span class="text-bold">privatisé</span> le secteur de l\'hydroélectricité. Depuis, tous les cours d\'eau du pays sont <span class="text-bold">accaparés</span> forçant les populations à se déplacer.',
-                ],
-                'popup_2' =>
-                [
-                    'question' => 'AU MEXIQUE',
-                    'text'     => 'Le géant américain, <span class="text-bold">Coca-Cola</span> engloutit <span class="text-bold">100 millions</span> de litres par an. Alors que <span class="text-bold">12 millions</span> d\'habitants n\'ont pas accès à l\'eau potable dans ce même pays.',
+                    'popup_1' =>
+                    [
+                        'question' => 'EN TURQUIE',
+                        'text'     => 'En 2013, le gouvernement turc a <span class="text-bold">privatisé</span> le secteur de l\'hydroélectricité. Depuis, tous les cours d\'eau du pays sont <span class="text-bold">accaparés</span> forçant les populations à se déplacer.',
+                    ],
+                    'popup_2' =>
+                    [
+                        'question' => 'AU MEXIQUE',
+                        'text'     => 'Le géant américain, <span class="text-bold">Coca-Cola</span> engloutit <span class="text-bold">100 millions</span> de litres par an. Alors que <span class="text-bold">12 millions</span> d\'habitants n\'ont pas accès à l\'eau potable dans ce même pays.',
+                    ],
                 ],
             ],
             'slide_4' =>
