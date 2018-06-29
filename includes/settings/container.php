@@ -357,16 +357,19 @@ $container['chapters'] = function($container)
                     [
                         'title' => 'Suivre le nil',
                         'text'  => 'L\'Égypte, entièrement tributaire du Nil pour ses ressources en eau, doit néanmoins partager celles-ci avec <span class="text-bold">10</span> autres États du bassin du Nil : notamment avec l\'<span class="text-bold">Ethipie</span> où le Nil bleu prend sa source, et avec le <span class="text-bold">Soudan</span> où le fleuve serpente avant de déboucher sur le territoire égyptien.',
+                        'image' => 'nil.jpg',
                     ],
                     'popup_2' =>
                     [
                         'title' => 'La Turquis',
                         'text'  => 'Quant à l\'<span class="text-bold">Irak</span> et à la <span class="text-bold">Syrie</span>, ils sont tous deux à la merci de la <span class="text-bold">Turquie</span>, où les deux fleuves qui les alimentent, le Tigre et l\'Euphrate, prennent leur source. L\'eau de l\'Euphrate a d\'ailleurs souvent servi d\'arme brandie par la Turquie contre ses deux voisins : grâce aux nombreux barrages qu\'elle a érigés sur le cours supérieur du fleuve et qui lui permettent d\'en réguler à sa guise le débit en aval, la Turquie possède là, en effet, un puissant moyen de pression.',
+                        'image' => 'tigre.jpg',
                     ],
                     'popup_3' =>
                     [
                         'title' => 'Quel avenir ?',
                         'text'  => 'Avec l\'essor démographique et l\'accroissement des besoins, ces tensions pourraient se multiplier à l\'avenir. C\'est ce que prédisent certains experts pour le XXIe siècle. D\'autres en revanche pensent que la gestion commune de l\'eau peut être un facteur de pacification. Ils mettent en avant des exemples étonnants de coopération : le plus fameux est celui de l\'Inde et du Pakistan qui, au plus fort de la guerre qui les opposait dans les années 1960, n\'ont jamais interrompu le financement des travaux d\'aménagement qu\'ils menaient en commun sur le fleuve Indus.',
+                        'image' => 'euphrate.jpg',
                     ],
                 ],
             ],

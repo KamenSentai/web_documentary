@@ -13,6 +13,9 @@
             <div class="bar-pop">
                 <h5>{{ _popup.title }}</h5>
                 <div>{{ _popup.text | raw }}</div>
+                {% if _popup.image is defined %}
+                    <img src="{{ base_url() }}/assets/images/{{ _popup.image }}" alt="{{ loop.index }}">
+                {% endif %}
                 <span class="close">&#x2715;</span>
             </div>
         {% endfor %}
