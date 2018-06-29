@@ -139,4 +139,32 @@ export default function setBar($container = document.querySelector('.barba-conta
             }
         }
     }
+
+    const $character = $container.querySelector('.character')
+
+    if ($character)
+    {
+        const $containersCharacter = $character.querySelectorAll('.container-character')
+
+        for (const $containerCharacter of $containersCharacter)
+        {
+            const $button = $containerCharacter.querySelector('.button-pop')
+            const $pop = $containerCharacter.querySelector('.bar-pop')
+            const $close = $containerCharacter.querySelector('.close')
+
+            $button.addEventListener('click', () =>
+            {
+                $pop.style.display    = 'block'
+                $pop.style.zIndex     = '1'
+                $button.style.zIndex  = '-1'
+            })
+
+            $close.addEventListener('click', () =>
+            {
+                $pop.style.display    = 'none'
+                $pop.style.zIndex     = '-1'
+                $button.style.zIndex  = '1'
+            })
+        }
+    }
 }

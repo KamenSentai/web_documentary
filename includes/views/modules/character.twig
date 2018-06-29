@@ -1,0 +1,10 @@
+{% for _character in _slide.characters %}
+    <div class="container-character">
+        <button class="button-pop">{{ _character.name }}</button>
+        <div class="bar-pop">
+            <h5>{{ _character.name }}</h5>
+            <div>{{ _character.description | raw }}</div>
+            <span class="close">&#x2715;</span>
+        </div>
+    </div>
+{% endfor %}

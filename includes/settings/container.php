@@ -269,21 +269,24 @@ $container['chapters'] = function($container)
             ],
             'slide_4' =>
             [
-                'type'        => 'character',
-                'character_1' =>
+                'type'       => 'character',
+                'characters' =>
                 [
-                    'name'        => 'PIERRE MOSCOVICI',
-                    'description' => 'Président de l\'agglomération du Pays de Montbéliard, il avait annoncé en <span class="text-bold">2010</span> le retour en régie de la gestion de l\'eau d\'ici 2015… alors que le contrat courait jusqu\'en <span class="text-bold">2022</span>, n\'en déplaise à Veolia.<br>Certains estiment que se prononcer en faveur de la gestion en régie, et donc contre la mainmise des groupes privés, reste une <span class="text-bold">manoeuvre électoraliste</span> efficace pour apaiser les ardeurs des Verts et redorer son blason socialiste. Pourtant, si le combat semble plus porté par la gauche, la gestion est une question qui dépasse bel et bien le clivage politique droite-gauche.',
-                ],
-                'character_2' =>
-                [
-                    'name'        => 'BERTRAND DELANÖE',
-                    'description' => 'Bertrand Delanoë en avait fait son cheval de bataille pour sa réélection à la Mairie de Paris en 2008. En réaffirmant, ce besoin de la puissance des collectivités locales face aux entreprises privées, motivé par un attachement certain au service public.<br><span class="text-bold">Olivier Galiana</span>, directeur du cabinet de la communauté d\'agglomération d\'Evry le disait : "La distribution d\'eau sera gérée par une régie publique et non plus par Suez car nous visons à nous réapproprier le service public de proximité.”',
-                ],
-                'character_3' =>
-                [
-                    'name'        => 'ANNE LE STRAT',
-                    'description' => 'D\'après Anne Le Strat, adjointe PS à la mairie de Paris <span class="text-bold">chargée de l\'eau</span> :<br>"Quand on regarde la carte de France de plus près, on voit que certaines villes de gauche ont décidé de rester délégataires tandis que des villes de droite ont cassé leur contrat pour passer en régie. Il faut donc se garder de tout raisonnement simpliste selon lequel les municipalités de gauche seraient plus favorables à une gestion publique que celles de droite.”',
+                    'character_1' =>
+                    [
+                        'name'        => 'PIERRE MOSCOVICI',
+                        'description' => 'Président de l\'agglomération du Pays de Montbéliard, il avait annoncé en <span class="text-bold">2010</span> le retour en régie de la gestion de l\'eau d\'ici 2015… alors que le contrat courait jusqu\'en <span class="text-bold">2022</span>, n\'en déplaise à Veolia.<br>Certains estiment que se prononcer en faveur de la gestion en régie, et donc contre la mainmise des groupes privés, reste une <span class="text-bold">manoeuvre électoraliste</span> efficace pour apaiser les ardeurs des Verts et redorer son blason socialiste. Pourtant, si le combat semble plus porté par la gauche, la gestion est une question qui dépasse bel et bien le clivage politique droite-gauche.',
+                    ],
+                    'character_2' =>
+                    [
+                        'name'        => 'BERTRAND DELANÖE',
+                        'description' => 'Bertrand Delanoë en avait fait son cheval de bataille pour sa réélection à la Mairie de Paris en 2008. En réaffirmant, ce besoin de la puissance des collectivités locales face aux entreprises privées, motivé par un attachement certain au service public.<br><span class="text-bold">Olivier Galiana</span>, directeur du cabinet de la communauté d\'agglomération d\'Evry le disait : "La distribution d\'eau sera gérée par une régie publique et non plus par Suez car nous visons à nous réapproprier le service public de proximité.”',
+                    ],
+                    'character_3' =>
+                    [
+                        'name'        => 'ANNE LE STRAT',
+                        'description' => 'D\'après Anne Le Strat, adjointe PS à la mairie de Paris <span class="text-bold">chargée de l\'eau</span> :<br>"Quand on regarde la carte de France de plus près, on voit que certaines villes de gauche ont décidé de rester délégataires tandis que des villes de droite ont cassé leur contrat pour passer en régie. Il faut donc se garder de tout raisonnement simpliste selon lequel les municipalités de gauche seraient plus favorables à une gestion publique que celles de droite.”',
+                    ],
                 ],
             ],
             'slide_5' =>
