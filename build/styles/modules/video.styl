@@ -1,0 +1,65 @@
+.area.video
+
+    .bar
+        position absolute
+        left 0
+        bottom 3rem
+        width 100%
+        height 1.5rem
+        border 0.125rem solid $lightBlue
+        font-family PNL
+        cursor pointer
+
+        .data
+            position absolute
+            left 0
+            bottom 3rem
+            cursor default
+            .title
+                margin-bottom 0.5rem
+                color $lightBlue
+                font-family PNR
+
+        .fill
+            position absolute
+            left 0
+            top 0
+            width 100%
+            height 100%
+            background-color rgba($lightBlue, 0.75)
+            transform-origin 0 0
+            transform scaleX(0)
+            will-change transform
+
+        .time
+            position absolute
+            top 137.5%
+            cursor default
+            &.start
+                left 0
+            &.end
+                right 0
+        
+    .button
+        center()
+        font-size 5rem
+        cursor pointer
+        opacity 0.5
+        composite(opacity, 0.25s, ease-out)
+        &:hover
+            opacity 1
+        .play
+            display none
+        .pause
+            display block
+        &.paused
+            .play
+                display block
+            .pause
+                display none
+
+    video
+        center()
+        width 100%
+        height auto
+        z-index -1

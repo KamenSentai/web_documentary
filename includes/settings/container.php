@@ -54,7 +54,8 @@ $container['chapters'] = function($container)
         [
             'slide_1' => 
             [
-                'type' => 'motion',
+                'type'  => 'video',
+                'video' => 'motion1.mp4',
             ],
             'slide_2' => 
             [
@@ -240,7 +241,8 @@ $container['chapters'] = function($container)
         [
             'slide_1' =>
             [
-                'type' => 'video',
+                'type'  => 'video',
+                'video' => 'documentaire.mp4',
             ],
             'slide_2' =>
             [
@@ -310,6 +312,13 @@ $container['chapters'] = function($container)
             'title' => 'Les limites et les avatanges<br>de la gestion de l\'eau',
             'text'  => 'Chaque minute, cinq personnes meurent dans le monde parce qu\'elles n\'ont pas accès à l\'eau potable.',
         ],
+        'slides' =>
+        [
+            'slide_1' =>
+            [
+                'type' => 'map',
+            ],
+        ],
     ];
 
     $chapter_5 =
@@ -328,7 +337,8 @@ $container['chapters'] = function($container)
         [
             'slide_1' =>
             [
-                'type'  => 'motion',
+                'type'  => 'video',
+                'video' => 'motion5.mp4',
             ],
             'slide_2' =>
             [
@@ -349,6 +359,7 @@ $container['chapters'] = function($container)
             'slide_3' =>
             [
                 'type'        => 'video',
+                'video'       => 'nestlé.mp4',
                 'title'       => 'NESTLÉ, PRIVATISER L\'EAU POUR MIEUX LA RÉPARTIR',
                 'text'        => '« We feed the world » - 2005 - Erwin Wagenhofer<br>Interview du président de Nestlé, Peter Brabeck',
                 'button'      => 'EN SAVOIR PLUS',

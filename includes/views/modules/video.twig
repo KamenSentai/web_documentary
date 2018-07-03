@@ -1,0 +1,16 @@
+<div class="button paused">
+    <span class="play">&#9654;</span>
+    <span class="pause">&#10073; &#10073;</span>
+</div>
+
+<div class="bar">
+    <div class="data">
+        <div class="title">{{ _slide.title }}</div>
+        <div class="text">{{ _slide.text | raw }}</div>
+    </div>
+    <div class="fill"></div>
+    <div class="time start">0:00</div>
+    <div class="time end">0:00</div>
+</div>
+
+<video src="{{ base_url() }}/assets/videos/{{ _slide.video }}"/>

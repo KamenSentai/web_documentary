@@ -1,34 +1,68 @@
-.slide3-container1
-    .slide3-container1-title-background
-        size(120%, auto)
+.area.audio
+    .background
         position absolute
-        center()
-    .slide3-container1-subContainer1
-        center()
-        size(70vw, auto)
-        margin-top 5vh
-        left 40vw
-        .slide3-container1-subContainer1-title
-            font-family PNB
-            padding 2vh 0
-            font-size 2vh
-            color #0086F0
-        .slide3-container1-subContainer1-text
-            font-family PNR
-            padding 1vh 0        
-            font-size 2vh
-    .slide4-button
-        center()
-        size(auto, auto)
-        padding 2vh 3vw
-        border 1px solid #FFFFFF
-        font-family PNR
-        font-size 3vh
-        text-transform uppercase
-        text-align center
-        margin-top 2vh
-        margin-bottom 0
+        left -3rem
+        top -8rem
+        width 100vw
+        height 100vh
+        background url(../assets/images/dirigeants.png)
+        background-size cover
+        background-position center
+
+    .bar
+        position absolute
+        left 0
+        bottom 3rem
+        width 100%
+        height 1.5rem
+        border 0.125rem solid $lightBlue
+        font-family PNL
         cursor pointer
+
+        .data
+            position absolute
+            left 0
+            bottom 3rem
+            cursor default
+            .title
+                margin-bottom 0.5rem
+                color $lightBlue
+                font-family PNR
+
+        .fill
+            position absolute
+            left 0
+            top 0
+            width 100%
+            height 100%
+            background-color rgba($lightBlue, 0.75)
+            transform-origin 0 0
+            transform scaleX(0)
+            will-change transform
+
+        .time
+            position absolute
+            top 137.5%
+            cursor default
+            &.start
+                left 0
+            &.end
+                right 0
+        
+    .button
+        center()
+        font-size 5rem
+        cursor pointer
+        opacity 0.5
+        composite(opacity, 0.25s, ease-out)
         &:hover
-            border 1px solid #0086F0
-            background #0086F0
+            opacity 1
+        .play
+            display none
+        .pause
+            display block
+        &.paused
+            .play
+                display block
+            .pause
+                display none
