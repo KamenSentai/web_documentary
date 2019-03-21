@@ -1,5 +1,5 @@
 {
-  "name": "web_documentary",
+  "name": "water_documentary",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KamenSentai/web_documentary.git"
+    "url": "git+https://github.com/KamenSentai/Water_Documentary.git"
   },
   "author": "Alain CVT <cvt.alain@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KamenSentai/web_documentary/issues"
+    "url": "https://github.com/KamenSentai/Water_Documentary/issues"
   },
-  "homepage": "https://github.com/KamenSentai/web_documentary#readme",
+  "homepage": "https://github.com/KamenSentai/Water_Documentary#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
